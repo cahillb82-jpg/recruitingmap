@@ -78,7 +78,6 @@ document.addEventListener("DOMContentLoaded", function() {
   renderKPIs();
   renderCamps();
   placeMarkers();
-  handleStripeReturn();
   checkAuth();
   if (window.lucide) { lucide.createIcons(); }
 });
@@ -86,7 +85,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
 /* ===== AUTH ===== */
 function checkAuth() {
-  fetch(API + "/api/auth/me")
+  fetch(API + "/api/auth/me", { credentials: "same-origin" })
     .then(function(res) { return res.json(); })
     .then(function(data) {
       if (data.authenticated) {
@@ -220,6 +219,7 @@ function handlePayment() {
   fetch(API + "/api/checkout", {
     method: "POST",
     headers: { "Content-Type": "application/json" },
+    credentials: "same-origin",
     body: JSON.stringify({ email: email, password: password })
   })
     .then(function(res) {
@@ -240,36 +240,7 @@ function handlePayment() {
     });
 }
 
-/* Handle return from Stripe Checkout */
-function handleStripeReturn() {
-  var params = new URLSearchParams(window.location.search);
-  var sessionId = params.get("session_id");
-  var email = params.get("email");
-  var pw = params.get("pw");
 
-  if (sessionId && email && pw) {
-    // Clean the URL
-    window.history.replaceState({}, document.title, window.location.pathname);
-
-    // Complete registration with verified Stripe session
-    fetch(API + "/api/auth/register", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ email: email, password: pw, stripe_session_id: sessionId })
-    })
-      .then(function(res) {
-        if (!res.ok) { return res.json().then(function(d) { throw new Error(d.detail || "Registration failed"); }); }
-        return res.json();
-      })
-      .then(function(data) {
-        setAuthenticated(true, data.user);
-      })
-      .catch(function(err) {
-        // If registration fails (e.g. email exists), show login
-        alert("Payment successful! " + err.message);
-      });
-  }
-}
 
 /* ===== LOGIN ===== */
 function handleLogin() {
@@ -298,6 +269,7 @@ function handleLogin() {
   fetch(API + "/api/auth/login", {
     method: "POST",
     headers: { "Content-Type": "application/json" },
+    credentials: "same-origin",
     body: JSON.stringify({ email: email, password: password })
   })
     .then(function(res) {
@@ -320,7 +292,7 @@ function handleLogin() {
 
 /* ===== LOGOUT ===== */
 function handleLogout() {
-  fetch(API + "/api/auth/logout", { method: "POST" })
+  fetch(API + "/api/auth/logout", { method: "POST", credentials: "same-origin" })
     .then(function() {
       window.location.reload();
     })
