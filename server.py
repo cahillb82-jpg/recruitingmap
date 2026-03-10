@@ -1,29 +1,29 @@
 import os
-import sqlite3
 import uuid
 from pathlib import Path
 from datetime import datetime, timedelta, timezone
 from contextlib import contextmanager
-from urllib.parse import quote
 
 import bcrypt
 import stripe
+import psycopg2
+import psycopg2.extras
 from fastapi import FastAPI, Request, HTTPException, Response
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.staticfiles import StaticFiles
 from fastapi.responses import FileResponse, RedirectResponse
 from pydantic import BaseModel, EmailStr
 
-DB_PATH = "recruiting_map.db"
 SESSION_DURATION_DAYS = 30
 COOKIE_NAME = "trm_session"
 
 # ---------------------------------------------------------------------------
-# Stripe config — set these as environment variables on your host
+# Config from environment variables
 # ---------------------------------------------------------------------------
 stripe.api_key = os.environ.get("STRIPE_SECRET_KEY", "")
 STRIPE_PRICE_ID = os.environ.get("STRIPE_PRICE_ID", "")
 SITE_URL = os.environ.get("SITE_URL", "http://localhost:8000")
+DATABASE_URL = os.environ.get("DATABASE_URL", "")
 
 
 app = FastAPI(title="The Recruiting Map")
@@ -38,25 +38,26 @@ app.add_middleware(
 
 
 # ---------------------------------------------------------------------------
-# Database helpers
+# Database helpers (PostgreSQL)
 # ---------------------------------------------------------------------------
 
 @contextmanager
 def get_db():
-    conn = sqlite3.connect(DB_PATH)
-    conn.row_factory = sqlite3.Row
-    conn.execute("PRAGMA journal_mode=WAL")
-    conn.execute("PRAGMA foreign_keys=ON")
+    conn = psycopg2.connect(DATABASE_URL, cursor_factory=psycopg2.extras.RealDictCursor)
     try:
         yield conn
         conn.commit()
+    except Exception:
+        conn.rollback()
+        raise
     finally:
         conn.close()
 
 
 def init_db():
     with get_db() as conn:
-        conn.execute(
+        cur = conn.cursor()
+        cur.execute(
             """
             CREATE TABLE IF NOT EXISTS users (
                 id TEXT PRIMARY KEY,
@@ -64,23 +65,21 @@ def init_db():
                 password_hash TEXT NOT NULL,
                 stripe_payment_id TEXT,
                 created_at TEXT NOT NULL,
-                is_active INTEGER NOT NULL DEFAULT 1
+                is_active BOOLEAN NOT NULL DEFAULT TRUE
             )
             """
         )
-        conn.execute(
+        cur.execute(
             """
             CREATE TABLE IF NOT EXISTS sessions (
                 id TEXT PRIMARY KEY,
-                user_id TEXT NOT NULL,
+                user_id TEXT NOT NULL REFERENCES users(id),
                 created_at TEXT NOT NULL,
-                expires_at TEXT NOT NULL,
-                FOREIGN KEY (user_id) REFERENCES users(id)
+                expires_at TEXT NOT NULL
             )
             """
         )
-        # Store pending registrations (email+password) while user pays on Stripe
-        conn.execute(
+        cur.execute(
             """
             CREATE TABLE IF NOT EXISTS pending_registrations (
                 stripe_session_id TEXT PRIMARY KEY,
@@ -90,6 +89,7 @@ def init_db():
             )
             """
         )
+        conn.commit()
 
 
 # ---------------------------------------------------------------------------
@@ -114,12 +114,13 @@ def get_session_id(request: Request) -> str | None:
     return request.cookies.get(COOKIE_NAME)
 
 
-def create_session(conn: sqlite3.Connection, user_id: str) -> str:
+def create_session(conn, user_id: str) -> str:
     session_id = str(uuid.uuid4())
     now = datetime.now(timezone.utc)
     expires = now + timedelta(days=SESSION_DURATION_DAYS)
-    conn.execute(
-        "INSERT INTO sessions (id, user_id, created_at, expires_at) VALUES (?, ?, ?, ?)",
+    cur = conn.cursor()
+    cur.execute(
+        "INSERT INTO sessions (id, user_id, created_at, expires_at) VALUES (%s, %s, %s, %s)",
         (session_id, user_id, now.isoformat(), expires.isoformat()),
     )
     return session_id
@@ -136,21 +137,22 @@ def set_session_cookie(response: Response, session_id: str):
     )
 
 
-def get_active_session(conn: sqlite3.Connection, session_id: str) -> dict | None:
+def get_active_session(conn, session_id: str) -> dict | None:
     if not session_id:
         return None
     now = datetime.now(timezone.utc).isoformat()
-    row = conn.execute(
+    cur = conn.cursor()
+    cur.execute(
         """
         SELECT s.*, u.email
         FROM sessions s
         JOIN users u ON u.id = s.user_id
-        WHERE s.id = ? AND s.expires_at > ?
+        WHERE s.id = %s AND s.expires_at > %s
         LIMIT 1
         """,
         (session_id, now),
-    ).fetchone()
-    return dict(row) if row else None
+    )
+    return cur.fetchone()
 
 
 # ---------------------------------------------------------------------------
@@ -170,8 +172,9 @@ def create_checkout(body: CheckoutRequest):
 
     # Check if email is already registered
     with get_db() as conn:
-        existing = conn.execute("SELECT id FROM users WHERE email = ?", (body.email,)).fetchone()
-        if existing:
+        cur = conn.cursor()
+        cur.execute("SELECT id FROM users WHERE email = %s", (body.email,))
+        if cur.fetchone():
             raise HTTPException(status_code=400, detail="Email already registered. Please log in instead.")
 
     try:
@@ -189,8 +192,13 @@ def create_checkout(body: CheckoutRequest):
     # Store email + hashed password temporarily, keyed by Stripe session ID
     hashed = bcrypt.hashpw(body.password.encode(), bcrypt.gensalt()).decode()
     with get_db() as conn:
-        conn.execute(
-            "INSERT OR REPLACE INTO pending_registrations (stripe_session_id, email, password_hash, created_at) VALUES (?, ?, ?, ?)",
+        cur = conn.cursor()
+        cur.execute(
+            """
+            INSERT INTO pending_registrations (stripe_session_id, email, password_hash, created_at)
+            VALUES (%s, %s, %s, %s)
+            ON CONFLICT (stripe_session_id) DO UPDATE SET email = EXCLUDED.email, password_hash = EXCLUDED.password_hash
+            """,
             (session.id, body.email, hashed, datetime.now(timezone.utc).isoformat()),
         )
 
@@ -213,10 +221,12 @@ def payment_complete(session_id: str):
 
     # Look up the pending registration
     with get_db() as conn:
-        pending = conn.execute(
-            "SELECT * FROM pending_registrations WHERE stripe_session_id = ?",
+        cur = conn.cursor()
+        cur.execute(
+            "SELECT * FROM pending_registrations WHERE stripe_session_id = %s",
             (session_id,),
-        ).fetchone()
+        )
+        pending = cur.fetchone()
 
         if not pending:
             return RedirectResponse(url=SITE_URL + "?error=registration_not_found")
@@ -225,16 +235,16 @@ def payment_complete(session_id: str):
         password_hash = pending["password_hash"]
 
         # Check if user already exists (e.g. double-click)
-        existing = conn.execute("SELECT id FROM users WHERE email = ?", (email,)).fetchone()
+        cur.execute("SELECT id FROM users WHERE email = %s", (email,))
+        existing = cur.fetchone()
+
         if existing:
-            # Already registered — just log them in
             user_id = existing["id"]
         else:
-            # Create the user
             user_id = str(uuid.uuid4())
             now = datetime.now(timezone.utc).isoformat()
-            conn.execute(
-                "INSERT INTO users (id, email, password_hash, stripe_payment_id, created_at, is_active) VALUES (?, ?, ?, ?, ?, 1)",
+            cur.execute(
+                "INSERT INTO users (id, email, password_hash, stripe_payment_id, created_at, is_active) VALUES (%s, %s, %s, %s, %s, TRUE)",
                 (user_id, email, password_hash, session_id, now),
             )
 
@@ -242,7 +252,7 @@ def payment_complete(session_id: str):
         login_session_id = create_session(conn, user_id)
 
         # Clean up pending registration
-        conn.execute("DELETE FROM pending_registrations WHERE stripe_session_id = ?", (session_id,))
+        cur.execute("DELETE FROM pending_registrations WHERE stripe_session_id = %s", (session_id,))
 
     # Redirect to site with session cookie set
     response = RedirectResponse(url=SITE_URL, status_code=303)
@@ -253,7 +263,10 @@ def payment_complete(session_id: str):
 @app.post("/api/auth/login")
 def login(body: LoginRequest):
     with get_db() as conn:
-        user = conn.execute("SELECT * FROM users WHERE email = ?", (body.email,)).fetchone()
+        cur = conn.cursor()
+        cur.execute("SELECT * FROM users WHERE email = %s", (body.email,))
+        user = cur.fetchone()
+
         if not user:
             raise HTTPException(status_code=401, detail="Invalid email or password")
 
@@ -292,7 +305,8 @@ def logout(request: Request):
 
     if session_id:
         with get_db() as conn:
-            conn.execute("DELETE FROM sessions WHERE id = ?", (session_id,))
+            cur = conn.cursor()
+            cur.execute("DELETE FROM sessions WHERE id = %s", (session_id,))
 
     response = Response(content='{"success": true}', media_type="application/json")
     response.delete_cookie(COOKIE_NAME)
