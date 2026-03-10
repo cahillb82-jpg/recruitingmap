@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!--
+   ______                            __
+  / ____/___  ____ ___  ____  __  __/ /____  _____
+ / /   / __ \/ __ `__ \/ __ \/ / / / __/ _ \/ ___/
+/ /___/ /_/ / / / / / / /_/ / /_/ / /_/  __/ /
+\____/\____/_/ /_/ /_/ .___/\__,_/\__/\___/_/
+                    /_/
+        Created with Perplexity Computer
+        https://www.perplexity.ai/computer
+-->
+
+<!-- Perplexity Computer Attribution — SEO Meta Tags -->
+<meta name="generator" content="Perplexity Computer">
+<meta name="author" content="Perplexity Computer">
+<meta property="og:see_also" content="https://www.perplexity.ai/computer">
+<link rel="author" href="https://www.perplexity.ai/computer">
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Recruiting Map — Find Every High-Academic Football Camp</title>
+<meta name="description" content="Interactive map of 43+ summer football recruiting camps at Ivy League, NESCAC, Patriot League, D3 Academic, and Mega Camp programs. One-time $29 for lifetime access.">
+
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+<link rel="stylesheet" href="./base.css">
+<link rel="stylesheet" href="./style.css">
+<script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+</head>
+<body>
+
+<!-- ===== LANDING PAGE ===== -->
+<div class="landing" id="landingPage">
+  <nav class="landing-nav">
+    <div class="landing-logo">
+      <svg viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="The Recruiting Map logo">
+        <rect width="36" height="36" rx="8" fill="var(--color-accent)"/>
+        <path d="M10 26V14l8-6 8 6v12" stroke="#fff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+        <circle cx="18" cy="18" r="3" stroke="#fff" stroke-width="2"/>
+        <path d="M18 15v-3" stroke="#fff" stroke-width="2" stroke-linecap="round"/>
+      </svg>
+      <span>The Recruiting Map</span>
+    </div>
+    <div class="landing-nav-actions">
+      <button class="btn-text" onclick="showModal('login')">Log In</button>
+      <button class="btn-primary-sm" onclick="showModal('pricing')">Get Access</button>
+    </div>
+  </nav>
+
+  <section class="hero">
+    <div class="hero-badge">Football Camp Finder for High-Academic Recruits</div>
+    <h1>Every camp. Every school.<br>One map.</h1>
+    <p class="hero-sub">43+ camps across Ivy League, NESCAC, Patriot League, D3 Academic, and Mega Camp programs — with dates, costs, coaches, and direct registration links. Updated for 2025-2026.</p>
+    <div class="hero-cta">
+      <button class="btn-primary" onclick="showModal('pricing')">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+        Unlock The Map — $29
+      </button>
+      <span class="hero-price-note">One-time payment. Lifetime access.</span>
+      <span class="guarantee-note"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>100% money-back guarantee — no questions asked</span>
+    </div>
+  </section>
+
+  <section class="preview-section">
+    <div class="preview-header">
+      <h2>See what's inside</h2>
+      <p>The interactive map below shows all camp locations. Unlock full access to see details, dates, costs, and registration links.</p>
+    </div>
+  </section>
+
+  <!-- TEASER MAP (always visible, details blurred) -->
+  <div class="teaser-wrapper">
+    <div class="dashboard teaser-mode" id="teaserDashboard">
+      <header class="header">
+        <div style="display:flex;align-items:center;gap:var(--space-4);">
+          <div class="logo">
+            <svg viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="The Recruiting Map logo">
+              <rect width="36" height="36" rx="8" fill="var(--color-accent)"/>
+              <path d="M10 26V14l8-6 8 6v12" stroke="#fff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+              <circle cx="18" cy="18" r="3" stroke="#fff" stroke-width="2"/>
+              <path d="M18 15v-3" stroke="#fff" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+            <div>
+              <div class="logo-text">The Recruiting Map</div>
+              <div class="logo-sub">High-Academic Football Camps</div>
+            </div>
+          </div>
+        </div>
+        <div class="kpi-strip" id="kpiStrip"></div>
+        <div class="header-actions">
+          <button class="theme-toggle" data-theme-toggle aria-label="Toggle theme">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+          </button>
+          <button class="btn-primary-sm header-login-btn" id="headerAuthBtn" onclick="showModal('login')">Log In</button>
+        </div>
+      </header>
+
+      <aside class="sidebar" id="sidebar">
+        <div class="sidebar-section">
+          <div class="section-title">Leagues</div>
+          <div class="league-filters" id="leagueFilters">
+            <button class="league-chip" data-league="ivy"><span class="chip-dot"></span>Ivy League</button>
+            <button class="league-chip" data-league="nescac"><span class="chip-dot"></span>NESCAC</button>
+            <button class="league-chip" data-league="patriot"><span class="chip-dot"></span>Patriot League</button>
+            <button class="league-chip" data-league="mega"><span class="chip-dot"></span>Mega Camps</button>
+            <button class="league-chip" data-league="d3"><span class="chip-dot"></span>D3 Academic</button>
+          </div>
+        </div>
+        <div class="sidebar-section">
+          <div class="search-box">
+            <svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+            <input type="text" id="searchInput" placeholder="Search schools or camps...">
+          </div>
+        </div>
+        <div class="camp-count" id="campCount"></div>
+        <div class="camp-list" id="campList"></div>
+        <div class="sidebar-footer">
+          <a href="https://www.perplexity.ai/computer" target="_blank" rel="noopener noreferrer">Created with Perplexity Computer</a>
+        </div>
+      </aside>
+
+      <div class="map-container">
+        <div id="map"></div>
+        <div class="map-legend">
+          <div class="legend-item"><span class="legend-dot ivy"></span>Ivy League</div>
+          <div class="legend-item"><span class="legend-dot nescac"></span>NESCAC</div>
+          <div class="legend-item"><span class="legend-dot patriot"></span>Patriot League</div>
+          <div class="legend-item"><span class="legend-dot mega"></span>Mega Camps</div>
+          <div class="legend-item"><span class="legend-dot d3"></span>D3 Academic</div>
+        </div>
+        <div class="detail-panel" id="detailPanel"></div>
+        <!-- Paywall overlay on map when not authenticated -->
+        <div class="paywall-overlay" id="paywallOverlay">
+          <div class="paywall-card">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="32" height="32"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+            <h3>Unlock Full Camp Details</h3>
+            <p>Get dates, costs, coach names, eligibility, and direct registration links for all 43+ camps.</p>
+            <button class="btn-primary" onclick="showModal('pricing')">Get Lifetime Access — $29</button>
+            <span class="paywall-guarantee"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="12" height="12"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>Money-back guarantee</span>
+            <button class="btn-text" onclick="showModal('login')" style="margin-top:var(--space-2);">Already have an account? Log in</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- VALUE PROPS -->
+  <section class="value-section">
+    <div class="value-grid">
+      <div class="value-card">
+        <div class="value-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+        </div>
+        <h3>Interactive Map</h3>
+        <p>See every camp location at a glance. Filter by league, search by school name, and zoom into the region that matters to you.</p>
+      </div>
+      <div class="value-card">
+        <div class="value-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+        </div>
+        <h3>Dates, Costs &amp; Details</h3>
+        <p>Every camp's dates, cost, eligibility, coach name, and location — all in one place. No more hunting through 40+ different websites.</p>
+      </div>
+      <div class="value-card">
+        <div class="value-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+        </div>
+        <h3>Direct Registration Links</h3>
+        <p>One click to register. Every camp card has a direct link to the camp's official sign-up page — no middleman.</p>
+      </div>
+      <div class="value-card">
+        <div class="value-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+        </div>
+        <h3>Mega Camp Coverage</h3>
+        <p>Not just school camps — we cover multi-school mega camps like New England Elite, Marist Exposure, and Football Hotbed's Ivy Tour.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRICING CTA -->
+  <section class="pricing-section" id="pricingSection">
+    <div class="pricing-card-standalone">
+      <div class="pricing-badge">Lifetime Access</div>
+      <div class="pricing-amount"><span class="dollar">$</span>29</div>
+      <div class="pricing-note">One-time payment. No subscriptions. No renewals.</div>
+      <ul class="pricing-features">
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" width="16" height="16"><polyline points="20 6 9 17 4 12"/></svg>43+ camps across 5 categories</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" width="16" height="16"><polyline points="20 6 9 17 4 12"/></svg>Dates, costs, eligibility &amp; coach info</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" width="16" height="16"><polyline points="20 6 9 17 4 12"/></svg>Direct registration links</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" width="16" height="16"><polyline points="20 6 9 17 4 12"/></svg>Interactive map with filters &amp; search</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" width="16" height="16"><polyline points="20 6 9 17 4 12"/></svg>Updated annually for new camp seasons</li>
+      </ul>
+      <button class="btn-primary btn-lg" onclick="showModal('pricing')">Get Access Now</button>
+      <div class="guarantee-badge">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+        100% Satisfaction Guaranteed — full refund if you're not happy
+      </div>
+    </div>
+  </section>
+
+  <footer class="landing-footer">
+    <div class="footer-inner">
+      <span>The Recruiting Map by <a href="https://coachcahill.com" target="_blank" rel="noopener noreferrer">CoachCahill.com</a></span>
+      <a href="https://www.perplexity.ai/computer" target="_blank" rel="noopener noreferrer">Created with Perplexity Computer</a>
+    </div>
+  </footer>
+</div>
+
+<!-- ===== MODALS ===== -->
+<div class="modal-backdrop" id="modalBackdrop" onclick="closeModal()"></div>
+
+<!-- Pricing/Payment Modal -->
+<div class="modal" id="pricingModal">
+  <button class="modal-close" onclick="closeModal()" aria-label="Close"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 6 6 18M6 6l12 12"/></svg></button>
+  <div class="modal-body" id="pricingModalBody">
+    <div class="pricing-modal-header">
+      <h2>Get Lifetime Access</h2>
+      <div class="pricing-amount-modal"><span class="dollar">$</span>29</div>
+      <p class="pricing-note">One-time payment. Access forever.</p>
+    </div>
+    <div class="stripe-placeholder">
+      <p class="stripe-info">Secure payment via Stripe</p>
+      <div class="form-group">
+        <label for="payEmail">Email</label>
+        <input type="email" id="payEmail" placeholder="you@email.com" autocomplete="email">
+      </div>
+      <div class="form-group">
+        <label for="payPassword">Create a password</label>
+        <input type="password" id="payPassword" placeholder="At least 8 characters" autocomplete="new-password">
+      </div>
+      <div id="pricingError" class="form-error"></div>
+      <button class="btn-primary btn-lg btn-full" id="payBtn" onclick="handlePayment()">
+        <span id="payBtnText">Pay $29 &amp; Create Account</span>
+        <span id="payBtnLoading" class="btn-loading" style="display:none;">Processing...</span>
+      </button>
+      <div class="modal-guarantee">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+        100% money-back guarantee if you're not satisfied
+      </div>
+      <p class="modal-fine-print">By purchasing, you agree to the terms of service. Your payment is processed securely through Stripe.</p>
+    </div>
+  </div>
+</div>
+
+<!-- Login Modal -->
+<div class="modal" id="loginModal">
+  <button class="modal-close" onclick="closeModal()" aria-label="Close"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 6 6 18M6 6l12 12"/></svg></button>
+  <div class="modal-body">
+    <h2>Welcome back</h2>
+    <p class="modal-sub">Log in to access The Recruiting Map</p>
+    <div class="form-group">
+      <label for="loginEmail">Email</label>
+      <input type="email" id="loginEmail" placeholder="you@email.com" autocomplete="email">
+    </div>
+    <div class="form-group">
+      <label for="loginPassword">Password</label>
+      <input type="password" id="loginPassword" placeholder="Your password" autocomplete="current-password">
+    </div>
+    <div id="loginError" class="form-error"></div>
+    <button class="btn-primary btn-lg btn-full" id="loginBtn" onclick="handleLogin()">
+      <span id="loginBtnText">Log In</span>
+      <span id="loginBtnLoading" class="btn-loading" style="display:none;">Logging in...</span>
+    </button>
+    <p class="modal-switch">Don't have an account? <button class="btn-text" onclick="switchModal('pricing')">Get access for $29</button></p>
+  </div>
+</div>
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script src="./app.js"></script>
+</body>
+</html>
