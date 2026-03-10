@@ -64,6 +64,15 @@
   --color-patriot:        #c4421a;
   --color-mega:           #b8860b;
   --color-d3:             #2563eb;
+  --color-big10:          #CC0000;
+  --color-big12:          #004B87;
+  --color-sec:            #cc8400;
+  --color-acc:            #013CA6;
+  --color-sunbelt:        #c99520;
+  --color-cusa:           #002D62;
+  --color-american:       #BF0D3E;
+  --color-mwc:            #00205B;
+  --color-caa:            #006747;
 
   --shadow-sm: 0 1px 3px rgba(26, 26, 46, 0.06);
   --shadow-md: 0 4px 12px rgba(26, 26, 46, 0.08);
@@ -97,6 +106,15 @@
   --color-patriot:        #f4845f;
   --color-mega:           #f0c75e;
   --color-d3:             #60a5fa;
+  --color-big10:          #ff4d4d;
+  --color-big12:          #4d9fe6;
+  --color-sec:            #f0c75e;
+  --color-acc:            #5b8fd9;
+  --color-sunbelt:        #f0c75e;
+  --color-cusa:           #4d7fc2;
+  --color-american:       #f06080;
+  --color-mwc:            #4d6fbf;
+  --color-caa:            #4dc9a0;
 
   --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.3);
   --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.4);
@@ -113,6 +131,9 @@
     --color-accent: #4fd1c5; --color-accent-hover: #38b2ac; --color-accent-light: rgba(79,209,197,0.12);
     --color-ivy: #6fcf97; --color-nescac: #c77ddb; --color-patriot: #f4845f;
     --color-mega: #f0c75e; --color-d3: #60a5fa;
+    --color-big10: #ff4d4d; --color-big12: #4d9fe6; --color-sec: #f0c75e;
+    --color-acc: #5b8fd9; --color-sunbelt: #f0c75e; --color-cusa: #4d7fc2;
+    --color-american: #f06080; --color-mwc: #4d6fbf; --color-caa: #4dc9a0;
     --shadow-sm: 0 1px 3px rgba(0,0,0,0.3); --shadow-md: 0 4px 12px rgba(0,0,0,0.4);
     --shadow-lg: 0 12px 32px rgba(0,0,0,0.5); --shadow-xl: 0 20px 48px rgba(0,0,0,0.6);
   }
@@ -764,6 +785,15 @@ body { overflow-x: hidden; }
 .league-chip[data-league="patriot"] { background: color-mix(in oklch, var(--color-patriot) 15%, transparent); color: var(--color-patriot); border-color: var(--color-patriot); }
 .league-chip[data-league="mega"] { background: color-mix(in oklch, var(--color-mega) 15%, transparent); color: var(--color-mega); border-color: var(--color-mega); }
 .league-chip[data-league="d3"] { background: color-mix(in oklch, var(--color-d3) 15%, transparent); color: var(--color-d3); border-color: var(--color-d3); }
+.league-chip[data-league="big10"] { background: color-mix(in oklch, var(--color-big10) 15%, transparent); color: var(--color-big10); border-color: var(--color-big10); }
+.league-chip[data-league="big12"] { background: color-mix(in oklch, var(--color-big12) 15%, transparent); color: var(--color-big12); border-color: var(--color-big12); }
+.league-chip[data-league="sec"] { background: color-mix(in oklch, var(--color-sec) 15%, transparent); color: var(--color-sec); border-color: var(--color-sec); }
+.league-chip[data-league="acc"] { background: color-mix(in oklch, var(--color-acc) 15%, transparent); color: var(--color-acc); border-color: var(--color-acc); }
+.league-chip[data-league="sunbelt"] { background: color-mix(in oklch, var(--color-sunbelt) 15%, transparent); color: var(--color-sunbelt); border-color: var(--color-sunbelt); }
+.league-chip[data-league="cusa"] { background: color-mix(in oklch, var(--color-cusa) 15%, transparent); color: var(--color-cusa); border-color: var(--color-cusa); }
+.league-chip[data-league="american"] { background: color-mix(in oklch, var(--color-american) 15%, transparent); color: var(--color-american); border-color: var(--color-american); }
+.league-chip[data-league="mwc"] { background: color-mix(in oklch, var(--color-mwc) 15%, transparent); color: var(--color-mwc); border-color: var(--color-mwc); }
+.league-chip[data-league="caa"] { background: color-mix(in oklch, var(--color-caa) 15%, transparent); color: var(--color-caa); border-color: var(--color-caa); }
 .league-chip.inactive { opacity: 0.4; border-color: var(--color-border); }
 
 .league-chip .chip-dot { width: 8px; height: 8px; border-radius: 50%; }
@@ -772,6 +802,15 @@ body { overflow-x: hidden; }
 .league-chip[data-league="patriot"] .chip-dot { background: var(--color-patriot); }
 .league-chip[data-league="mega"] .chip-dot { background: var(--color-mega); }
 .league-chip[data-league="d3"] .chip-dot { background: var(--color-d3); }
+.league-chip[data-league="big10"] .chip-dot { background: var(--color-big10); }
+.league-chip[data-league="big12"] .chip-dot { background: var(--color-big12); }
+.league-chip[data-league="sec"] .chip-dot { background: var(--color-sec); }
+.league-chip[data-league="acc"] .chip-dot { background: var(--color-acc); }
+.league-chip[data-league="sunbelt"] .chip-dot { background: var(--color-sunbelt); }
+.league-chip[data-league="cusa"] .chip-dot { background: var(--color-cusa); }
+.league-chip[data-league="american"] .chip-dot { background: var(--color-american); }
+.league-chip[data-league="mwc"] .chip-dot { background: var(--color-mwc); }
+.league-chip[data-league="caa"] .chip-dot { background: var(--color-caa); }
 
 .search-box { position: relative; }
 .search-box input {
@@ -818,6 +857,15 @@ body { overflow-x: hidden; }
 .camp-league-badge.patriot { background: color-mix(in oklch, var(--color-patriot) 15%, transparent); color: var(--color-patriot); }
 .camp-league-badge.mega { background: color-mix(in oklch, var(--color-mega) 15%, transparent); color: var(--color-mega); }
 .camp-league-badge.d3 { background: color-mix(in oklch, var(--color-d3) 15%, transparent); color: var(--color-d3); }
+.camp-league-badge.big10 { background: color-mix(in oklch, var(--color-big10) 15%, transparent); color: var(--color-big10); }
+.camp-league-badge.big12 { background: color-mix(in oklch, var(--color-big12) 15%, transparent); color: var(--color-big12); }
+.camp-league-badge.sec { background: color-mix(in oklch, var(--color-sec) 15%, transparent); color: var(--color-sec); }
+.camp-league-badge.acc { background: color-mix(in oklch, var(--color-acc) 15%, transparent); color: var(--color-acc); }
+.camp-league-badge.sunbelt { background: color-mix(in oklch, var(--color-sunbelt) 15%, transparent); color: var(--color-sunbelt); }
+.camp-league-badge.cusa { background: color-mix(in oklch, var(--color-cusa) 15%, transparent); color: var(--color-cusa); }
+.camp-league-badge.american { background: color-mix(in oklch, var(--color-american) 15%, transparent); color: var(--color-american); }
+.camp-league-badge.mwc { background: color-mix(in oklch, var(--color-mwc) 15%, transparent); color: var(--color-mwc); }
+.camp-league-badge.caa { background: color-mix(in oklch, var(--color-caa) 15%, transparent); color: var(--color-caa); }
 
 .camp-name { font-size: var(--text-xs); color: var(--color-text-muted); margin-bottom: var(--space-3); line-height: 1.4; }
 .camp-meta { display: flex; flex-direction: column; gap: var(--space-1); font-size: var(--text-xs); color: var(--color-text-muted); }
@@ -846,7 +894,7 @@ body { overflow-x: hidden; }
   display: flex; align-items: center; justify-content: center;
   width: 32px; height: 32px; border-radius: 50%;
   border: 3px solid #fff; box-shadow: 0 2px 8px rgba(0,0,0,0.3);
-  font-size: 13px; font-weight: 700; color: #fff;
+  font-size: 10px; font-weight: 700; color: #fff;
   transition: transform 0.2s ease; cursor: pointer;
 }
 .custom-marker:hover { transform: scale(1.2); }
@@ -855,6 +903,15 @@ body { overflow-x: hidden; }
 .custom-marker.patriot { background: #c4421a; }
 .custom-marker.mega { background: #b8860b; }
 .custom-marker.d3 { background: #2563eb; }
+.custom-marker.big10 { background: var(--color-big10); }
+.custom-marker.big12 { background: var(--color-big12); }
+.custom-marker.sec { background: var(--color-sec); }
+.custom-marker.acc { background: var(--color-acc); }
+.custom-marker.sunbelt { background: var(--color-sunbelt); }
+.custom-marker.cusa { background: var(--color-cusa); }
+.custom-marker.american { background: var(--color-american); }
+.custom-marker.mwc { background: var(--color-mwc); }
+.custom-marker.caa { background: var(--color-caa); }
 .custom-marker.active { transform: scale(1.3); box-shadow: 0 0 0 4px rgba(14, 145, 140, 0.4), 0 2px 8px rgba(0,0,0,0.3); }
 
 .leaflet-popup-content-wrapper { border-radius: var(--radius-lg) !important; box-shadow: var(--shadow-lg) !important; padding: 0 !important; }
@@ -865,7 +922,7 @@ body { overflow-x: hidden; }
   position: absolute; bottom: var(--space-4); right: var(--space-4);
   background: var(--color-surface); border: 1px solid var(--color-divider);
   border-radius: var(--radius-lg); padding: var(--space-3) var(--space-4);
-  z-index: 500; box-shadow: var(--shadow-md); display: flex; gap: var(--space-4);
+  z-index: 500; box-shadow: var(--shadow-md); display: flex; gap: var(--space-3); flex-wrap: wrap;
 }
 .legend-item {
   display: flex; align-items: center; gap: var(--space-2);
@@ -877,6 +934,15 @@ body { overflow-x: hidden; }
 .legend-dot.patriot { background: var(--color-patriot); }
 .legend-dot.mega { background: var(--color-mega); }
 .legend-dot.d3 { background: var(--color-d3); }
+.legend-dot.big10 { background: var(--color-big10); }
+.legend-dot.big12 { background: var(--color-big12); }
+.legend-dot.sec { background: var(--color-sec); }
+.legend-dot.acc { background: var(--color-acc); }
+.legend-dot.sunbelt { background: var(--color-sunbelt); }
+.legend-dot.cusa { background: var(--color-cusa); }
+.legend-dot.american { background: var(--color-american); }
+.legend-dot.mwc { background: var(--color-mwc); }
+.legend-dot.caa { background: var(--color-caa); }
 
 .camp-count {
   font-size: var(--text-xs); color: var(--color-text-faint);

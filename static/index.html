@@ -20,8 +20,8 @@
 
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>The Recruiting Map — Find Every High-Academic Football Camp</title>
-<meta name="description" content="Interactive map of 43+ summer football recruiting camps at Ivy League, NESCAC, Patriot League, D3 Academic, and Mega Camp programs. One-time $29 for lifetime access.">
+<title>The Recruiting Map — Find Every College Football Camp</title>
+<meta name="description" content="Interactive map of 175+ summer football recruiting camps at Ivy League, NESCAC, Patriot League, Big Ten, SEC, ACC, Big 12, and more. One-time $29 for lifetime access.">
 
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
 <link rel="stylesheet" href="./base.css">
@@ -49,9 +49,9 @@
   </nav>
 
   <section class="hero">
-    <div class="hero-badge">Football Camp Finder for High-Academic Recruits</div>
+    <div class="hero-badge">College Football Camp Finder</div>
     <h1>Every camp. Every school.<br>One map.</h1>
-    <p class="hero-sub">43+ camps across Ivy League, NESCAC, Patriot League, D3 Academic, and Mega Camp programs — with dates, costs, coaches, and direct registration links. Updated for 2025-2026.</p>
+    <p class="hero-sub">175+ camps across Ivy League, NESCAC, Patriot League, Big Ten, SEC, ACC, Big 12, Sun Belt, Conference USA, AAC, Mountain West, CAA, and more — with dates, costs, coaches, and direct registration links. Updated for 2025-2026.</p>
     <div class="hero-cta">
       <button class="btn-primary" onclick="showModal('pricing')">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
@@ -83,7 +83,7 @@
             </svg>
             <div>
               <div class="logo-text">The Recruiting Map</div>
-              <div class="logo-sub">High-Academic Football Camps</div>
+              <div class="logo-sub">College Football Camps</div>
             </div>
           </div>
         </div>
@@ -98,13 +98,32 @@
 
       <aside class="sidebar" id="sidebar">
         <div class="sidebar-section">
-          <div class="section-title">Leagues</div>
+          <div class="section-title">High Academic</div>
           <div class="league-filters" id="leagueFilters">
             <button class="league-chip" data-league="ivy"><span class="chip-dot"></span>Ivy League</button>
             <button class="league-chip" data-league="nescac"><span class="chip-dot"></span>NESCAC</button>
             <button class="league-chip" data-league="patriot"><span class="chip-dot"></span>Patriot League</button>
             <button class="league-chip" data-league="mega"><span class="chip-dot"></span>Mega Camps</button>
             <button class="league-chip" data-league="d3"><span class="chip-dot"></span>D3 Academic</button>
+          </div>
+        </div>
+        <div class="sidebar-section">
+          <div class="section-title">FBS Conferences</div>
+          <div class="league-filters">
+            <button class="league-chip" data-league="big10"><span class="chip-dot"></span>Big Ten</button>
+            <button class="league-chip" data-league="big12"><span class="chip-dot"></span>Big 12</button>
+            <button class="league-chip" data-league="sec"><span class="chip-dot"></span>SEC</button>
+            <button class="league-chip" data-league="acc"><span class="chip-dot"></span>ACC</button>
+            <button class="league-chip" data-league="sunbelt"><span class="chip-dot"></span>Sun Belt</button>
+            <button class="league-chip" data-league="cusa"><span class="chip-dot"></span>C-USA</button>
+            <button class="league-chip" data-league="american"><span class="chip-dot"></span>American</button>
+            <button class="league-chip" data-league="mwc"><span class="chip-dot"></span>Mountain West</button>
+          </div>
+        </div>
+        <div class="sidebar-section">
+          <div class="section-title">FCS Conferences</div>
+          <div class="league-filters">
+            <button class="league-chip" data-league="caa"><span class="chip-dot"></span>CAA</button>
           </div>
         </div>
         <div class="sidebar-section">
@@ -123,11 +142,20 @@
       <div class="map-container">
         <div id="map"></div>
         <div class="map-legend">
-          <div class="legend-item"><span class="legend-dot ivy"></span>Ivy League</div>
+          <div class="legend-item"><span class="legend-dot ivy"></span>Ivy</div>
           <div class="legend-item"><span class="legend-dot nescac"></span>NESCAC</div>
-          <div class="legend-item"><span class="legend-dot patriot"></span>Patriot League</div>
-          <div class="legend-item"><span class="legend-dot mega"></span>Mega Camps</div>
-          <div class="legend-item"><span class="legend-dot d3"></span>D3 Academic</div>
+          <div class="legend-item"><span class="legend-dot patriot"></span>Patriot</div>
+          <div class="legend-item"><span class="legend-dot mega"></span>Mega</div>
+          <div class="legend-item"><span class="legend-dot d3"></span>D3</div>
+          <div class="legend-item"><span class="legend-dot big10"></span>B1G</div>
+          <div class="legend-item"><span class="legend-dot big12"></span>Big 12</div>
+          <div class="legend-item"><span class="legend-dot sec"></span>SEC</div>
+          <div class="legend-item"><span class="legend-dot acc"></span>ACC</div>
+          <div class="legend-item"><span class="legend-dot sunbelt"></span>Sun Belt</div>
+          <div class="legend-item"><span class="legend-dot cusa"></span>C-USA</div>
+          <div class="legend-item"><span class="legend-dot american"></span>AAC</div>
+          <div class="legend-item"><span class="legend-dot mwc"></span>MW</div>
+          <div class="legend-item"><span class="legend-dot caa"></span>CAA</div>
         </div>
         <div class="detail-panel" id="detailPanel"></div>
         <!-- Paywall overlay on map when not authenticated -->
@@ -135,7 +163,7 @@
           <div class="paywall-card">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="32" height="32"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
             <h3>Unlock Full Camp Details</h3>
-            <p>Get dates, costs, coach names, eligibility, and direct registration links for all 43+ camps.</p>
+            <p>Get dates, costs, coach names, eligibility, and direct registration links for all 175+ camps.</p>
             <button class="btn-primary" onclick="showModal('pricing')">Get Lifetime Access — $29</button>
             <span class="paywall-guarantee"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="12" height="12"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>Money-back guarantee</span>
             <button class="btn-text" onclick="showModal('login')" style="margin-top:var(--space-2);">Already have an account? Log in</button>
@@ -153,14 +181,14 @@
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
         </div>
         <h3>Interactive Map</h3>
-        <p>See every camp location at a glance. Filter by league, search by school name, and zoom into the region that matters to you.</p>
+        <p>See every camp location at a glance. Filter by conference, search by school name, and zoom into the region that matters to you.</p>
       </div>
       <div class="value-card">
         <div class="value-icon">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
         </div>
         <h3>Dates, Costs &amp; Details</h3>
-        <p>Every camp's dates, cost, eligibility, coach name, and location — all in one place. No more hunting through 40+ different websites.</p>
+        <p>Every camp's dates, cost, eligibility, coach name, and location — all in one place. No more hunting through 175+ different websites.</p>
       </div>
       <div class="value-card">
         <div class="value-icon">
@@ -173,8 +201,8 @@
         <div class="value-icon">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
         </div>
-        <h3>Mega Camp Coverage</h3>
-        <p>Not just school camps — we cover multi-school mega camps like New England Elite, Marist Exposure, and Football Hotbed's Ivy Tour.</p>
+        <h3>Every Conference Covered</h3>
+        <p>From Ivy League to SEC, Big Ten to Sun Belt — high-academic and FBS/FCS camps in one place. Mega camps and multi-school events included.</p>
       </div>
     </div>
   </section>
@@ -186,7 +214,7 @@
       <div class="pricing-amount"><span class="dollar">$</span>29</div>
       <div class="pricing-note">One-time payment. No subscriptions. No renewals.</div>
       <ul class="pricing-features">
-        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" width="16" height="16"><polyline points="20 6 9 17 4 12"/></svg>43+ camps across 5 categories</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" width="16" height="16"><polyline points="20 6 9 17 4 12"/></svg>175+ camps across 14 categories</li>
         <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" width="16" height="16"><polyline points="20 6 9 17 4 12"/></svg>Dates, costs, eligibility &amp; coach info</li>
         <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" width="16" height="16"><polyline points="20 6 9 17 4 12"/></svg>Direct registration links</li>
         <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" width="16" height="16"><polyline points="20 6 9 17 4 12"/></svg>Interactive map with filters &amp; search</li>
