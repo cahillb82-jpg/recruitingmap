@@ -59,7 +59,7 @@ var CAMPS = [
   { id:"uchicago", school:"Chicago", campName:"Football Prospect Camp", league:"d3", lat:41.7915, lng:-87.6019, dates:"July 17, 2026", cost:"$75", eligibility:"HS Prospects", type:"Prospect Camp", coach:"Craig Knoche", location:"Ratner Center, 5530 S. Ellis, Chicago, IL", registrationUrl:"https://universityofchicagofootball.totalcamps.com/shop/EVENT", notes:"One-day prospect camp. Skill instruction, competitive drills, optional campus tour, admissions talk. UAA D3." },
   { id:"carnegie-mellon", school:"Carnegie Mellon", campName:"Nike Football Skills Camp at CMU", league:"d3", lat:40.4433, lng:-79.9435, dates:"July 27-30, 2026", cost:"TBD (register for details)", eligibility:"Ages 8-14", type:"Skills Camp (Third-Party)", coach:"Ryan Larsen", location:"Gesling Stadium, Pittsburgh, PA", registrationUrl:"https://www.ussportscamps.com/football/nike-1/nike-skills-football-camp-carnegie-mellon-university", notes:"Third-party Nike camp directed by CMU head coach. Non-contact skills, day camp format. No official CMU prospect camp found. PAC D3." },
   { id:"johns-hopkins", school:"Johns Hopkins", campName:"No Official Camp", league:"d3", lat:39.3299, lng:-76.6205, dates:"N/A", cost:"N/A", eligibility:"N/A", type:"No Official Camp", coach:"Dan Wodicka", location:"Homewood Field, Baltimore, MD", registrationUrl:"", notes:"No official prospect camp announced for 2025/2026. Coaches attend external camps for evaluation. Contact staff for visit info. Centennial D3." },
-  { id:"grinnell", school:"Grinnell", campName:"No Official Camp", league:"d3", lat:41.7434, lng:-92.7230, dates:"N/A", cost:"N/A", eligibility:"N/A", type:"No Official Camp", coach:"Brent Barnes", location:"Rosenbloom Field, Grinnell, IA", registrationUrl:"", notes:"No official camp found. Midwest Elite Football Clinic (third-party) sometimes held at Grinnell. Contact staff for visit info. MWC D3." }
+  { id:"grinnell", school:"Grinnell", campName:"No Official Camp", league:"d3", lat:41.7434, lng:-92.7230, dates:"N/A", cost:"N/A", eligibility:"N/A", type:"No Official Camp", coach:"Brent Barnes", location:"Rosenbloom Field, Grinnell, IA", registrationUrl:"", notes:"No official camp found. Midwest Elite Football Clinic (third-party) sometimes held at Grinnell. Contact staff for visit info. MWC D3." },
 
   // === NEW FBS & FCS CONFERENCES ===
   { id:"indiana", school:"Indiana", campName:"1-Day Elite Prospect Camp | June 4th", league:"big10", lat:39.1804, lng:-86.5267, dates:"Thursday, June 4, 2026 (3:00 PM - 4:45 PM)", cost:"$85 pre-registration ($80 + $5 fees); $100 walk-up", eligibility:"9th - 12th grade & Post Grad/JUCO players (9th - College Junior as of Fall 2026)", type:"Elite Prospect", coach:"Curt Cignetti", location:"Bloomington, IN", registrationUrl:"https://register.ryzer.com/camp.cfm?sport=1&id=326803", notes:"One-day showcase with position-specific instruction, group drills, and 1-on-1 competitions by IU staff and players. OL/DL bring pads/helmets. Specialists register separately. Operated by Curt Cignetti Football Camps LLC (separate from IU). Location: Memorial Stadium area. Parking: Orange Lot." },
@@ -203,6 +203,9 @@ var searchQuery = "";
 var selectedCampId = null;
 var map = null;
 var markers = {};
+var currentView = "camps";
+var coachSortField = "school";
+var coachSortDir = "asc";
 
 /* ===== INIT ===== */
 document.addEventListener("DOMContentLoaded", function() {
@@ -214,6 +217,8 @@ document.addEventListener("DOMContentLoaded", function() {
   renderCamps();
   placeMarkers();
   checkAuth();
+  initCoachesView();
+  initViewTabs();
   if (window.lucide) { lucide.createIcons(); }
 });
 
@@ -242,8 +247,11 @@ function setAuthenticated(auth, user) {
   var paywallOverlay = document.getElementById("paywallOverlay");
   var landing = document.getElementById("landingPage");
   var authBtn = document.getElementById("headerAuthBtn");
+  var viewTabs = document.getElementById("viewTabs");
 
   if (auth) {
+    // Show the Camps/Coaches tabs
+    if (viewTabs) { viewTabs.style.display = "flex"; }
     // Move dashboard out of the landing page wrapper to become top-level
     if (dashboard.parentElement !== document.body) {
       document.body.insertBefore(dashboard, document.body.firstChild);
@@ -278,6 +286,7 @@ function setAuthenticated(auth, user) {
       }, 300);
     }
   } else {
+    if (viewTabs) { viewTabs.style.display = "none"; }
     dashboard.classList.add("teaser-mode");
     dashboard.classList.remove("authenticated");
     paywallOverlay.classList.remove("hidden");
@@ -697,4 +706,196 @@ function showDetailPanel(camp) {
       }
     });
   });
+}
+
+
+/* ===== VIEW TABS ===== */
+function initViewTabs() {
+  document.querySelectorAll(".view-tab").forEach(function(tab) {
+    tab.addEventListener("click", function() {
+      var view = this.getAttribute("data-view");
+      switchView(view);
+    });
+  });
+}
+
+function switchView(view) {
+  currentView = view;
+  var sidebar = document.getElementById("sidebar");
+  var mapCont = document.getElementById("mapContainer");
+  var coachesView = document.getElementById("coachesView");
+
+  document.querySelectorAll(".view-tab").forEach(function(t) {
+    t.classList.toggle("active", t.getAttribute("data-view") === view);
+  });
+
+  if (view === "coaches") {
+    sidebar.style.display = "none";
+    mapCont.style.display = "none";
+    coachesView.style.display = "flex";
+    renderCoaches();
+  } else {
+    sidebar.style.display = "";
+    mapCont.style.display = "";
+    coachesView.style.display = "none";
+    if (map) { map.invalidateSize(); }
+  }
+}
+
+
+/* ===== COACHES VIEW ===== */
+function initCoachesView() {
+  if (typeof COACHES === "undefined") { return; }
+
+  // Populate school filter
+  var schools = [];
+  var schoolSet = {};
+  COACHES.forEach(function(c) { schoolSet[c.school] = true; });
+  schools = Object.keys(schoolSet).sort();
+  var schoolSelect = document.getElementById("coachFilterSchool");
+  schools.forEach(function(s) {
+    var opt = document.createElement("option");
+    opt.value = s; opt.textContent = s;
+    schoolSelect.appendChild(opt);
+  });
+
+  // Populate position group filter
+  var groups = {};
+  COACHES.forEach(function(c) { groups[c.position_group] = true; });
+  var groupList = Object.keys(groups).sort();
+  var posSelect = document.getElementById("coachFilterPosition");
+  groupList.forEach(function(g) {
+    var opt = document.createElement("option");
+    opt.value = g; opt.textContent = g;
+    posSelect.appendChild(opt);
+  });
+
+  // Populate region filter
+  var regions = {};
+  COACHES.forEach(function(c) {
+    (c.regions || []).forEach(function(r) { regions[r] = true; });
+  });
+  var regionList = Object.keys(regions).sort();
+  var regSelect = document.getElementById("coachFilterRegion");
+  regionList.forEach(function(r) {
+    var opt = document.createElement("option");
+    opt.value = r; opt.textContent = r;
+    regSelect.appendChild(opt);
+  });
+
+  // Filter change handlers
+  ["coachFilterConference", "coachFilterSchool", "coachFilterPosition", "coachFilterRegion"].forEach(function(id) {
+    document.getElementById(id).addEventListener("change", function() { renderCoaches(); });
+  });
+  document.getElementById("coachSearchInput").addEventListener("input", function() { renderCoaches(); });
+
+  // Sort headers
+  document.querySelectorAll(".coaches-table thead th.sortable").forEach(function(th) {
+    th.addEventListener("click", function() {
+      var field = this.getAttribute("data-sort");
+      if (coachSortField === field) {
+        coachSortDir = coachSortDir === "asc" ? "desc" : "asc";
+      } else {
+        coachSortField = field;
+        coachSortDir = "asc";
+      }
+      // Update header classes
+      document.querySelectorAll(".coaches-table thead th.sortable").forEach(function(h) {
+        h.classList.remove("sort-asc", "sort-desc");
+      });
+      this.classList.add(coachSortDir === "asc" ? "sort-asc" : "sort-desc");
+      renderCoaches();
+    });
+  });
+}
+
+function getFilteredCoaches() {
+  if (typeof COACHES === "undefined") { return []; }
+
+  var conf = document.getElementById("coachFilterConference").value;
+  var school = document.getElementById("coachFilterSchool").value;
+  var pos = document.getElementById("coachFilterPosition").value;
+  var region = document.getElementById("coachFilterRegion").value;
+  var search = document.getElementById("coachSearchInput").value.toLowerCase().trim();
+
+  return COACHES.filter(function(c) {
+    if (conf && c.conference !== conf) return false;
+    if (school && c.school !== school) return false;
+    if (pos && c.position_group !== pos) return false;
+    if (region && (!c.regions || c.regions.indexOf(region) === -1)) return false;
+    if (search) {
+      var haystack = (c.name + " " + c.school + " " + c.title + " " + c.position_group + " " + c.recruiting_area + " " + c.x_handle).toLowerCase();
+      if (haystack.indexOf(search) === -1) return false;
+    }
+    return true;
+  });
+}
+
+function renderCoaches() {
+  var filtered = getFilteredCoaches();
+
+  // Sort
+  filtered.sort(function(a, b) {
+    var valA = (a[coachSortField] || "").toLowerCase();
+    var valB = (b[coachSortField] || "").toLowerCase();
+    if (valA < valB) return coachSortDir === "asc" ? -1 : 1;
+    if (valA > valB) return coachSortDir === "asc" ? 1 : -1;
+    return 0;
+  });
+
+  // Stats
+  var ivy = 0, patriot = 0, withX = 0, withEmail = 0;
+  filtered.forEach(function(c) {
+    if (c.conference === "Ivy League") ivy++;
+    if (c.conference === "Patriot League") patriot++;
+    if (c.x_url && c.x_url !== "Not found") withX++;
+    if (c.email) withEmail++;
+  });
+  document.getElementById("coachesStats").innerHTML =
+    '<span><span class="stat-value">' + filtered.length + '</span> coaches</span>' +
+    '<span><span class="stat-value">' + ivy + '</span> Ivy</span>' +
+    '<span><span class="stat-value">' + patriot + '</span> Patriot</span>' +
+    '<span><span class="stat-value">' + withX + '</span> X profiles</span>' +
+    '<span><span class="stat-value">' + withEmail + '</span> emails</span>';
+
+  // Table body
+  var tbody = document.getElementById("coachesTableBody");
+  if (filtered.length === 0) {
+    tbody.innerHTML = '<tr><td colspan="6" class="coaches-no-results">No coaches match your filters.</td></tr>';
+    return;
+  }
+
+  var xSvg = '<svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>';
+
+  tbody.innerHTML = filtered.map(function(c) {
+    var confClass = c.conference === "Ivy League" ? "ivy" : "patriot";
+    var confLabel = c.conference === "Ivy League" ? "IVY" : "PAT";
+
+    var hasX = c.x_url && c.x_url !== "Not found" && c.x_handle && c.x_handle !== "Not found";
+    var xCell = hasX
+      ? '<a href="' + escapeHtml(c.x_url) + '" class="coach-x-link" target="_blank" rel="noopener noreferrer">' + xSvg + escapeHtml(c.x_handle) + '</a>'
+      : '<span style="color:var(--color-text-faint);font-size:var(--text-xs);">—</span>';
+
+    var emailCell = c.email
+      ? '<a href="mailto:' + escapeHtml(c.email) + '" class="coach-email-link">' + escapeHtml(c.email) + '</a>'
+      : '<span style="color:var(--color-text-faint);font-size:var(--text-xs);">—</span>';
+
+    var regionTags = (c.regions || []).map(function(r) {
+      return '<span class="region-tag">' + escapeHtml(r) + '</span>';
+    }).join("");
+
+    var areaCell = c.recruiting_area
+      ? '<div class="coach-recruiting-area">' + escapeHtml(c.recruiting_area) + '</div>' +
+        (regionTags ? '<div class="coach-region-tags" style="margin-top:2px;">' + regionTags + '</div>' : '')
+      : '<span style="color:var(--color-text-faint);font-size:var(--text-xs);">—</span>';
+
+    return '<tr>' +
+      '<td><div class="coach-name-cell">' + escapeHtml(c.name) + '</div><div class="coach-title">' + escapeHtml(c.title) + '</div></td>' +
+      '<td class="coach-school-cell">' + escapeHtml(c.school) + '<span class="coach-conference-badge ' + confClass + '">' + confLabel + '</span></td>' +
+      '<td>' + escapeHtml(c.position_group) + '</td>' +
+      '<td>' + areaCell + '</td>' +
+      '<td>' + xCell + '</td>' +
+      '<td>' + emailCell + '</td>' +
+    '</tr>';
+  }).join("");
 }

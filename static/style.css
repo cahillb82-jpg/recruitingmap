@@ -1026,6 +1026,260 @@ body { overflow-x: hidden; }
 .btn-logout:hover { color: var(--color-text); background: var(--color-bg); }
 
 /* ====================================================================
+   VIEW TABS (Camps / Coaches toggle)
+   ==================================================================== */
+
+.view-tabs {
+  display: flex;
+  gap: 2px;
+  background: var(--color-surface-offset);
+  border-radius: var(--radius-md);
+  padding: 2px;
+}
+.view-tab {
+  padding: var(--space-2) var(--space-4);
+  font-size: var(--text-sm);
+  font-weight: 600;
+  border-radius: calc(var(--radius-md) - 2px);
+  color: var(--color-text-muted);
+  background: transparent;
+  transition: all var(--transition-interactive);
+  white-space: nowrap;
+}
+.view-tab:hover { color: var(--color-text); }
+.view-tab.active {
+  background: var(--color-surface);
+  color: var(--color-text);
+  box-shadow: var(--shadow-sm);
+}
+
+/* ====================================================================
+   COACHES DIRECTORY VIEW
+   ==================================================================== */
+
+.coaches-view {
+  grid-column: 1 / -1;
+  grid-row: 2;
+  overflow-y: auto;
+  background: var(--color-bg);
+  display: flex;
+  flex-direction: column;
+}
+
+.coaches-filters {
+  padding: var(--space-4) var(--space-6);
+  background: var(--color-surface);
+  border-bottom: 1px solid var(--color-divider);
+}
+
+.coaches-filter-row {
+  display: flex;
+  gap: var(--space-3);
+  flex-wrap: wrap;
+  align-items: flex-end;
+}
+
+.filter-group {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+  min-width: 140px;
+}
+.filter-group.filter-search {
+  flex: 1;
+  min-width: 180px;
+}
+
+.filter-label {
+  font-size: 0.6875rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--color-text-faint);
+}
+
+.filter-select {
+  padding: var(--space-2) var(--space-3);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  background: var(--color-bg);
+  font-size: var(--text-sm);
+  color: var(--color-text);
+  font-family: var(--font-body);
+}
+.filter-select:focus {
+  outline: none;
+  border-color: var(--color-accent);
+  box-shadow: 0 0 0 3px color-mix(in oklch, var(--color-accent) 20%, transparent);
+}
+
+.coaches-stats {
+  margin-top: var(--space-3);
+  display: flex;
+  gap: var(--space-4);
+  font-size: var(--text-xs);
+  color: var(--color-text-muted);
+}
+.coaches-stats .stat-value {
+  font-weight: 700;
+  color: var(--color-text);
+  font-variant-numeric: tabular-nums;
+}
+
+.coaches-table-wrap {
+  flex: 1;
+  overflow: auto;
+  padding: 0 var(--space-6) var(--space-6);
+}
+
+.coaches-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  margin-top: var(--space-4);
+}
+
+.coaches-table thead th {
+  position: sticky;
+  top: 0;
+  background: var(--color-surface);
+  padding: var(--space-3) var(--space-4);
+  font-size: var(--text-xs);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--color-text-muted);
+  text-align: left;
+  border-bottom: 2px solid var(--color-divider);
+  white-space: nowrap;
+  z-index: 10;
+}
+
+.coaches-table thead th.sortable {
+  cursor: pointer;
+  user-select: none;
+}
+.coaches-table thead th.sortable:hover {
+  color: var(--color-text);
+}
+.coaches-table thead th .sort-arrow {
+  display: inline-block;
+  margin-left: var(--space-1);
+  opacity: 0.3;
+  font-size: 0.75em;
+}
+.coaches-table thead th.sort-asc .sort-arrow::after { content: "\2191"; opacity: 1; }
+.coaches-table thead th.sort-desc .sort-arrow::after { content: "\2193"; opacity: 1; }
+
+.coaches-table tbody tr {
+  transition: background var(--transition-interactive);
+}
+.coaches-table tbody tr:hover {
+  background: var(--color-surface-offset);
+}
+
+.coaches-table tbody td {
+  padding: var(--space-3) var(--space-4);
+  font-size: var(--text-sm);
+  color: var(--color-text);
+  border-bottom: 1px solid var(--color-divider);
+  vertical-align: middle;
+}
+
+.coach-name-cell {
+  font-weight: 600;
+  white-space: nowrap;
+}
+.coach-title {
+  font-size: var(--text-xs);
+  color: var(--color-text-muted);
+  font-weight: 400;
+}
+
+.coach-school-cell {
+  white-space: nowrap;
+}
+.coach-conference-badge {
+  display: inline-block;
+  padding: 1px 6px;
+  border-radius: var(--radius-full);
+  font-size: 0.625rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  margin-left: var(--space-2);
+  vertical-align: middle;
+}
+.coach-conference-badge.ivy {
+  background: color-mix(in oklch, var(--color-ivy) 15%, transparent);
+  color: var(--color-ivy);
+}
+.coach-conference-badge.patriot {
+  background: color-mix(in oklch, var(--color-patriot) 15%, transparent);
+  color: var(--color-patriot);
+}
+
+.coach-region-tags {
+  display: flex;
+  gap: var(--space-1);
+  flex-wrap: wrap;
+}
+.region-tag {
+  display: inline-block;
+  padding: 1px 6px;
+  border-radius: var(--radius-full);
+  font-size: 0.625rem;
+  font-weight: 600;
+  background: var(--color-accent-light);
+  color: var(--color-accent);
+}
+
+.coach-x-link {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-1);
+  color: var(--color-accent);
+  text-decoration: none;
+  font-size: var(--text-xs);
+  font-weight: 500;
+  white-space: nowrap;
+}
+.coach-x-link:hover {
+  text-decoration: underline;
+}
+.coach-x-link svg {
+  width: 14px;
+  height: 14px;
+  flex-shrink: 0;
+}
+
+.coach-email-link {
+  color: var(--color-text-muted);
+  text-decoration: none;
+  font-size: var(--text-xs);
+  word-break: break-all;
+}
+.coach-email-link:hover {
+  color: var(--color-accent);
+  text-decoration: underline;
+}
+
+.coaches-no-results {
+  text-align: center;
+  padding: var(--space-12) var(--space-4);
+  color: var(--color-text-muted);
+  font-size: var(--text-sm);
+}
+
+.coach-recruiting-area {
+  font-size: var(--text-xs);
+  color: var(--color-text-muted);
+  max-width: 240px;
+  line-height: 1.4;
+}
+
+
+/* ====================================================================
    RESPONSIVE
    ==================================================================== */
 
@@ -1055,4 +1309,14 @@ body { overflow-x: hidden; }
 
   .footer-inner { flex-direction: column; gap: var(--space-2); text-align: center; }
   .landing-nav-actions .btn-text { display: none; }
+
+  /* Coaches view mobile */
+  .coaches-filters { padding: var(--space-3); }
+  .coaches-filter-row { flex-direction: column; gap: var(--space-2); }
+  .filter-group { min-width: 100%; }
+  .coaches-table-wrap { padding: 0 var(--space-3) var(--space-3); }
+  .coaches-table thead th,
+  .coaches-table tbody td { padding: var(--space-2) var(--space-3); font-size: var(--text-xs); }
+  .coaches-table thead th:nth-child(4),
+  .coaches-table tbody td:nth-child(4) { display: none; }
 }

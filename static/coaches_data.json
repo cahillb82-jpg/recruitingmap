@@ -1,0 +1,2561 @@
+[
+  {
+    "conference": "Ivy League",
+    "school": "Brown",
+    "coach_name": "James Perry",
+    "title": "Head Football Coach",
+    "x_handle": "@BrownHCPerry",
+    "x_url": "https://x.com/BrownHCPerry",
+    "recruiting_area": "",
+    "regions": [],
+    "email": "james_perry@brown.edu",
+    "position_group": "Head Coach"
+  },
+  {
+    "conference": "Ivy League",
+    "school": "Brown",
+    "coach_name": "Bryan Murray",
+    "title": "Outside Linebackers Coach",
+    "x_handle": "@CoachBAM93",
+    "x_url": "https://x.com/CoachBAM93",
+    "recruiting_area": "Illinois, Indiana, Iowa, Minnesota, Wisconsin",
+    "regions": [
+      "Midwest"
+    ],
+    "email": "bryan_murray@brown.edu",
+    "position_group": "Linebackers"
+  },
+  {
+    "conference": "Ivy League",
+    "school": "Brown",
+    "coach_name": "Dan Mulrooney",
+    "title": "Defensive Coordinator",
+    "x_handle": "@Coach_Mul",
+    "x_url": "https://x.com/Coach_Mul",
+    "recruiting_area": "Delaware, New Jersey, New York, Eastern Pennsylvania",
+    "regions": [
+      "Northeast"
+    ],
+    "email": "daniel_mulrooney@brown.edu",
+    "position_group": "Defensive Coordinator"
+  },
+  {
+    "conference": "Ivy League",
+    "school": "Brown",
+    "coach_name": "Darryl Jackson",
+    "title": "defensive backs coach",
+    "x_handle": "Not found",
+    "x_url": "Not found",
+    "recruiting_area": "Arizona, Southern California, Northern Florida, Tennessee",
+    "regions": [
+      "Southeast",
+      "West"
+    ],
+    "email": "darryl_jackson@brown.edu",
+    "position_group": "Defensive Backs"
+  },
+  {
+    "conference": "Ivy League",
+    "school": "Brown",
+    "coach_name": "Eddy Morrissey",
+    "title": "Assistant Coach, Offensive Line and Run Game Coordinator",
+    "x_handle": "@CoachEMorrissey",
+    "x_url": "https://x.com/CoachEMorrissey",
+    "recruiting_area": "District of Columbia/DMV, Eastern and Central Massachusetts, New Hampshire, Oregon, West Virginia",
+    "regions": [
+      "Northeast",
+      "Southeast",
+      "West"
+    ],
+    "email": "eddy_morrissey@brown.edu",
+    "position_group": "Offensive Line"
+  },
+  {
+    "conference": "Ivy League",
+    "school": "Brown",
+    "coach_name": "Mitchell Jonke",
+    "title": "Quarterbacks Coach and Recruiting Coordinator",
+    "x_handle": "@coach_jonke",
+    "x_url": "https://x.com/coach_jonke",
+    "recruiting_area": "Colorado, Western Massachusetts, Texas (Austin, DFW, Central/West Texas)",
+    "regions": [
+      "Northeast",
+      "Southwest",
+      "West"
+    ],
+    "email": "jeffrey_jonke@brown.edu",
+    "position_group": "Quarterbacks"
+  },
+  {
+    "conference": "Ivy League",
+    "school": "Brown",
+    "coach_name": "Patrick Murphy",
+    "title": "Assistant Coach, Tight Ends/Special Teams Coordinator",
+    "x_handle": "@CoachPXMurphy",
+    "x_url": "https://x.com/CoachPXMurphy",
+    "recruiting_area": "Arkansas, North Carolina, Oklahoma, South Carolina, Southern Texas/Houston/San Antonio",
+    "regions": [
+      "Midwest",
+      "Southeast",
+      "Southwest"
+    ],
+    "email": "patrick_murphy2@brown.edu",
+    "position_group": "Special Teams"
+  },
+  {
+    "conference": "Ivy League",
+    "school": "Brown",
+    "coach_name": "Phil DeCapito",
+    "title": "Defensive Line Coach",
+    "x_handle": "@CoachPDeCapito",
+    "x_url": "https://x.com/CoachPDeCapito",
+    "recruiting_area": "Kansas, Kentucky, Michigan, Missouri, Ohio, Western and Central Pennsylvania",
+    "regions": [
+      "Midwest",
+      "Northeast",
+      "Southeast"
+    ],
+    "email": "philip_decapito@brown.edu",
+    "position_group": "Defensive Line"
+  },
+  {
+    "conference": "Ivy League",
+    "school": "Brown",
+    "coach_name": "Willie Edwards",
+    "title": "Assistant Head Coach, Football",
+    "x_handle": "@CoachW_Edwards",
+    "x_url": "https://x.com/CoachW_Edwards",
+    "recruiting_area": "Connecticut, South Florida, Georgia, Rhode Island",
+    "regions": [
+      "Northeast",
+      "Southeast"
+    ],
+    "email": "william_edwards1@brown.edu",
+    "position_group": "Head Coach"
+  },
+  {
+    "conference": "Ivy League",
+    "school": "Columbia",
+    "coach_name": "Jon Poppe",
+    "title": "Patricia and Shepard Alexander Head Coach of Football",
+    "x_handle": "@Coach_Poppe",
+    "x_url": "https://x.com/Coach_Poppe",
+    "recruiting_area": "",
+    "regions": [],
+    "email": "football@columbia.edu",
+    "position_group": "Head Coach"
+  },
+  {
+    "conference": "Ivy League",
+    "school": "Columbia",
+    "coach_name": "AJ Gallagher",
+    "title": "Wide Receivers Coach",
+    "x_handle": "@CoachAJG",
+    "x_url": "https://x.com/CoachAJG",
+    "recruiting_area": "",
+    "regions": [],
+    "email": "ag4939@columbia.edu",
+    "position_group": "Wide Receivers"
+  },
+  {
+    "conference": "Ivy League",
+    "school": "Columbia",
+    "coach_name": "Andrew Kukesh",
+    "title": "Defensive Backs Coach/Co-Defensive Coordinator",
+    "x_handle": "@Coach_Kukesh",
+    "x_url": "https://x.com/Coach_Kukesh",
+    "recruiting_area": "",
+    "regions": [],
+    "email": "ak4238@columbia.edu",
+    "position_group": "Defensive Coordinator"
+  },
+  {
+    "conference": "Ivy League",
+    "school": "Columbia",
+    "coach_name": "Carlif Taylor",
+    "title": "Defensive Line Coach",
+    "x_handle": "@FBCoachTaylor",
+    "x_url": "https://x.com/FBCoachTaylor",
+    "recruiting_area": "",
+    "regions": [],
+    "email": "ct3357@columbia.edu",
+    "position_group": "Defensive Line"
+  },
+  {
+    "conference": "Ivy League",
+    "school": "Columbia",
+    "coach_name": "Chris Batti",
+    "title": "Quarterbacks Coach",
+    "x_handle": "@Coach_Batti",
+    "x_url": "https://x.com/Coach_Batti",
+    "recruiting_area": "",
+    "regions": [],
+    "email": "cb3961@columbia.edu",
+    "position_group": "Quarterbacks"
+  },
+  {
+    "conference": "Ivy League",
+    "school": "Columbia",
+    "coach_name": "Gregory Skjold",
+    "title": "Offensive Line Coach",
+    "x_handle": "@Coach_Skjold",
+    "x_url": "https://x.com/Coach_Skjold",
+    "recruiting_area": "Ohio, Washington, and New Jersey (Garden State)",
+    "regions": [
+      "Midwest",
+      "Northeast",
+      "West"
+    ],
+    "email": "gs2999@columbia.edu",
+    "position_group": "Offensive Line"
+  },
+  {
+    "conference": "Ivy League",
+    "school": "Columbia",
+    "coach_name": "Justin Woodley",
+    "title": "Linebackers Coach",
+    "x_handle": "@CoachJWood",
+    "x_url": "https://x.com/CoachJWood",
+    "recruiting_area": "California, Arizona",
+    "regions": [
+      "West"
+    ],
+    "email": "jw3572@columbia.edu",
+    "position_group": "Linebackers"
+  },
+  {
+    "conference": "Ivy League",
+    "school": "Columbia",
+    "coach_name": "Kenneth Tinsley",
+    "title": "Running Backs Coach",
+    "x_handle": "@CoachT_82",
+    "x_url": "https://x.com/CoachT_82",
+    "recruiting_area": "",
+    "regions": [],
+    "email": "kt2997@columbia.edu",
+    "position_group": "Running Backs"
+  },
+  {
+    "conference": "Ivy League",
+    "school": "Columbia",
+    "coach_name": "Ryan Osborn",
+    "title": "Defensive Coordinator/Assistant Head Coach",
+    "x_handle": "@CoachRyanOsborn",
+    "x_url": "https://x.com/CoachRyanOsborn",
+    "recruiting_area": "",
+    "regions": [],
+    "email": "ro2447@columbia.edu",
+    "position_group": "Head Coach"
+  },
+  {
+    "conference": "Ivy League",
+    "school": "Columbia",
+    "coach_name": "Seitu Smith",
+    "title": "Offensive Coordinator/Quarterbacks Coach",
+    "x_handle": "@SSmith_II",
+    "x_url": "https://x.com/SSmith_II",
+    "recruiting_area": "",
+    "regions": [],
+    "email": "ss7190@columbia.edu",
+    "position_group": "Offensive Coordinator"
+  },
+  {
+    "conference": "Ivy League",
+    "school": "Cornell",
+    "coach_name": "Dan Swanstrom",
+    "title": "The Roger J. Weiss Head Coach of Cornell Football",
+    "x_handle": "@DanSwanstrom",
+    "x_url": "https://x.com/DanSwanstrom",
+    "recruiting_area": "",
+    "regions": [],
+    "email": "football@cornell.edu",
+    "position_group": "Head Coach"
+  },
+  {
+    "conference": "Ivy League",
+    "school": "Cornell",
+    "coach_name": "Andrew Dees",
+    "title": "Tight Ends Coach",
+    "x_handle": "@coach_dees",
+    "x_url": "https://x.com/coach_dees",
+    "recruiting_area": "New York, Connecticut, Massachusetts, New England Prep Schools",
+    "regions": [
+      "Northeast"
+    ],
+    "email": "ad825@cornell.edu",
+    "position_group": "Tight Ends"
+  },
+  {
+    "conference": "Ivy League",
+    "school": "Cornell",
+    "coach_name": "Eric Franklin",
+    "title": "Defensive Backs/Cornerbacks Coach/Pass Game Coordinator",
+    "x_handle": "@CoachEFranklin",
+    "x_url": "https://x.com/CoachEFranklin",
+    "recruiting_area": "D.C., Maryland, Virginia, North Carolina, NE Tip of South Carolina",
+    "regions": [
+      "Southeast"
+    ],
+    "email": "ef452@cornell.edu",
+    "position_group": "Running Backs"
+  },
+  {
+    "conference": "Ivy League",
+    "school": "Cornell",
+    "coach_name": "Jeff Dittman",
+    "title": "Special Teams Coordinator",
+    "x_handle": "@CoachJDittman58",
+    "x_url": "https://x.com/CoachJDittman58",
+    "recruiting_area": "Illinois, Kansas, Missouri, Minnesota, Wisconsin",
+    "regions": [
+      "Midwest"
+    ],
+    "email": "jd2327@cornell.edu",
+    "position_group": "Special Teams"
+  },
+  {
+    "conference": "Ivy League",
+    "school": "Cornell",
+    "coach_name": "Mike Hatcher",
+    "title": "Wide Receivers Coach",
+    "x_handle": "@Coach_Hatcher20",
+    "x_url": "https://x.com/Coach_Hatcher20",
+    "recruiting_area": "New Jersey, Pennsylvania, West Virginia, Delaware",
+    "regions": [
+      "Northeast",
+      "Southeast"
+    ],
+    "email": "mh2569@cornell.edu",
+    "position_group": "Wide Receivers"
+  },
+  {
+    "conference": "Ivy League",
+    "school": "Cornell",
+    "coach_name": "Mike Toerper",
+    "title": "Defensive Coordinator",
+    "x_handle": "@CoachTerp_",
+    "x_url": "https://x.com/CoachTerp_",
+    "recruiting_area": "Ohio, Tennessee, Michigan, Indiana",
+    "regions": [
+      "Midwest",
+      "Southeast"
+    ],
+    "email": "mt934@cornell.edu",
+    "position_group": "Defensive Coordinator"
+  },
+  {
+    "conference": "Ivy League",
+    "school": "Cornell",
+    "coach_name": "Satyen Bhakta",
+    "title": "Defensive Line Coach / Recruiting Coordinator",
+    "x_handle": "@CoachBhakta",
+    "x_url": "https://x.com/CoachBhakta",
+    "recruiting_area": "Texas, Colorado, Arizona",
+    "regions": [
+      "Southwest",
+      "West"
+    ],
+    "email": "sb993@cornell.edu",
+    "position_group": "Defensive Line"
+  },
+  {
+    "conference": "Ivy League",
+    "school": "Cornell",
+    "coach_name": "Sean Reeder",
+    "title": "Co-Offensive Coordinator/Offensive Line Coach",
+    "x_handle": "@Sean_Reeder",
+    "x_url": "https://x.com/Sean_Reeder",
+    "recruiting_area": "Southern California",
+    "regions": [
+      "West"
+    ],
+    "email": "sr2358@cornell.edu",
+    "position_group": "Offensive Coordinator"
+  },
+  {
+    "conference": "Ivy League",
+    "school": "Cornell",
+    "coach_name": "Terry Ursin",
+    "title": "Assistant Coach/Running Backs Coach",
+    "x_handle": "@TerryUrsin",
+    "x_url": "https://x.com/TerryUrsin",
+    "recruiting_area": "Georgia, Louisiana, Rest of South Carolina (All Counties except: Cherokee, Chester, Chesterfield, Lancaster, Marlboro, Spartanburg, York)",
+    "regions": [
+      "Northeast",
+      "Southeast"
+    ],
+    "email": "tu59@cornell.edu",
+    "position_group": "Running Backs"
+  },
+  {
+    "conference": "Ivy League",
+    "school": "Cornell",
+    "coach_name": "Trey Flowers",
+    "title": "Assistant Coach/Quarterbacks",
+    "x_handle": "@TreyFlowers_",
+    "x_url": "https://x.com/TreyFlowers_",
+    "recruiting_area": "Florida, Alabama",
+    "regions": [
+      "Southeast"
+    ],
+    "email": "tf279@cornell.edu",
+    "position_group": "Quarterbacks"
+  },
+  {
+    "conference": "Ivy League",
+    "school": "Dartmouth",
+    "coach_name": "Sammy McCorkle",
+    "title": "Robert L. Blackman Head Football Coach",
+    "x_handle": "@Coach_McCorkle",
+    "x_url": "https://x.com/Coach_McCorkle",
+    "recruiting_area": "",
+    "regions": [],
+    "email": "dartmouth.football@dartmouth.edu",
+    "position_group": "Head Coach"
+  },
+  {
+    "conference": "Ivy League",
+    "school": "Dartmouth",
+    "coach_name": "Braxton Chapman",
+    "title": "Running Backs Coach",
+    "x_handle": "Not found",
+    "x_url": "Not found",
+    "recruiting_area": "",
+    "regions": [],
+    "email": "braxton.c.chapman@dartmouth.edu",
+    "position_group": "Running Backs"
+  },
+  {
+    "conference": "Ivy League",
+    "school": "Dartmouth",
+    "coach_name": "Don Dobes",
+    "title": "Football Defensive Coordinator",
+    "x_handle": "@coach_dobes",
+    "x_url": "https://x.com/coach_dobes",
+    "recruiting_area": "",
+    "regions": [],
+    "email": "donald.g.dobes@dartmouth.edu",
+    "position_group": "Defensive Coordinator"
+  },
+  {
+    "conference": "Ivy League",
+    "school": "Dartmouth",
+    "coach_name": "Duane Brooks",
+    "title": "Defensive Line Coach",
+    "x_handle": "Not found",
+    "x_url": "Not found",
+    "recruiting_area": "",
+    "regions": [],
+    "email": "duane.b.brooks@dartmouth.edu",
+    "position_group": "Defensive Line"
+  },
+  {
+    "conference": "Ivy League",
+    "school": "Dartmouth",
+    "coach_name": "Jordan Belfiori",
+    "title": "Defensive Coordinator",
+    "x_handle": "@CoachBelfiori",
+    "x_url": "https://x.com/CoachBelfiori",
+    "recruiting_area": "",
+    "regions": [],
+    "email": "jordan.m.belfiori@dartmouth.edu",
+    "position_group": "Defensive Coordinator"
+  },
+  {
+    "conference": "Ivy League",
+    "school": "Dartmouth",
+    "coach_name": "Keith Clark",
+    "title": "Assistant Coach - Offensive Line",
+    "x_handle": "@coachkeithclark",
+    "x_url": "https://x.com/coachkeithclark",
+    "recruiting_area": "Kentucky, Ohio, Pennsylvania (all but Philadelphia), Tennessee, West Virginia",
+    "regions": [
+      "Midwest",
+      "Northeast",
+      "Southeast"
+    ],
+    "email": "keith.p.clark@dartmouth.edu",
+    "position_group": "Offensive Line"
+  },
+  {
+    "conference": "Ivy League",
+    "school": "Dartmouth",
+    "coach_name": "Kevin Bracken",
+    "title": "Assistant Coach - Secondary",
+    "x_handle": "@CoachBracken",
+    "x_url": "https://x.com/CoachBracken",
+    "recruiting_area": "New England, NY, Mid-Mountain, Canada/International (Dartmouth Recruiting Map)",
+    "regions": [
+      "International",
+      "Northeast"
+    ],
+    "email": "Kevin.P.Bracken.Jr@dartmouth.edu",
+    "position_group": "Defensive Backs"
+  },
+  {
+    "conference": "Ivy League",
+    "school": "Dartmouth",
+    "coach_name": "Kevin Daft",
+    "title": "Associate Head Coach / Tight Ends Coach",
+    "x_handle": "@CoachDaft",
+    "x_url": "https://x.com/CoachDaft",
+    "recruiting_area": "California, Arizona",
+    "regions": [
+      "West"
+    ],
+    "email": "kevin.b.daft@dartmouth.edu",
+    "position_group": "Head Coach"
+  },
+  {
+    "conference": "Ivy League",
+    "school": "Dartmouth",
+    "coach_name": "Levorn Harbin",
+    "title": "Football Outside Linebackers Coach",
+    "x_handle": "Not found",
+    "x_url": "Not found",
+    "recruiting_area": "",
+    "regions": [],
+    "email": "levorn.harbin@dartmouth.edu",
+    "position_group": "Linebackers"
+  },
+  {
+    "conference": "Ivy League",
+    "school": "Dartmouth",
+    "coach_name": "Mike Johnson",
+    "title": "Cornerbacks Coach",
+    "x_handle": "Not found",
+    "x_url": "Not found",
+    "recruiting_area": "",
+    "regions": [],
+    "email": "michael.johnson@dartmouth.edu",
+    "position_group": "Running Backs"
+  },
+  {
+    "conference": "Ivy League",
+    "school": "Dartmouth",
+    "coach_name": "Mitchell Thompson",
+    "title": "Wide Receivers Coach",
+    "x_handle": "@coachmcthompson",
+    "x_url": "https://x.com/coachmcthompson",
+    "recruiting_area": "",
+    "regions": [],
+    "email": "mitchell.thompson@dartmouth.edu",
+    "position_group": "Wide Receivers"
+  },
+  {
+    "conference": "Ivy League",
+    "school": "Dartmouth",
+    "coach_name": "Shane Montgomery",
+    "title": "Offensive Coordinator",
+    "x_handle": "@CoachShaneMonty",
+    "x_url": "https://x.com/CoachShaneMonty",
+    "recruiting_area": "DMV (D.C., Maryland, Virginia), North Carolina, Delaware",
+    "regions": [
+      "Northeast",
+      "Southeast"
+    ],
+    "email": "Shane.M.Montgomery@dartmouth.edu",
+    "position_group": "Offensive Coordinator"
+  },
+  {
+    "conference": "Ivy League",
+    "school": "Harvard",
+    "coach_name": "Andrew Aurich",
+    "title": "Thomas Stephenson Family Head Coach for Harvard Football",
+    "x_handle": "@Coach_Aurich",
+    "x_url": "https://x.com/Coach_Aurich",
+    "recruiting_area": "",
+    "regions": [],
+    "email": "aaurich@fas.harvard.edu",
+    "position_group": "Head Coach"
+  },
+  {
+    "conference": "Ivy League",
+    "school": "Harvard",
+    "coach_name": "Cinjun Erskine",
+    "title": "Tight Ends Coach",
+    "x_handle": "@Cinjun_Erskine",
+    "x_url": "https://x.com/Cinjun_Erskine",
+    "recruiting_area": "Arizona, Nevada, Southern California",
+    "regions": [
+      "West"
+    ],
+    "email": "cerskine@fas.harvard.edu",
+    "position_group": "Tight Ends"
+  },
+  {
+    "conference": "Ivy League",
+    "school": "Harvard",
+    "coach_name": "Jim Jackson",
+    "title": "Offensive Line Coach",
+    "x_handle": "@CoachJimJackson",
+    "x_url": "https://x.com/CoachJimJackson",
+    "recruiting_area": "Arkansas, New Mexico, Oklahoma, Texas",
+    "regions": [
+      "Midwest",
+      "Southeast",
+      "Southwest",
+      "West"
+    ],
+    "email": "jjackson1@fas.harvard.edu",
+    "position_group": "Offensive Line"
+  },
+  {
+    "conference": "Ivy League",
+    "school": "Harvard",
+    "coach_name": "Joel Lamb",
+    "title": "Associate Head Coach \u2013 Director of Recruiting Strategy and Alumni Engagement",
+    "x_handle": "@Coach_Joel_Lamb",
+    "x_url": "https://x.com/Coach_Joel_Lamb",
+    "recruiting_area": "",
+    "regions": [],
+    "email": "jlamb@fas.harvard.edu",
+    "position_group": "Head Coach"
+  },
+  {
+    "conference": "Ivy League",
+    "school": "Harvard",
+    "coach_name": "Kevin Falaki",
+    "title": "Running Backs Coach",
+    "x_handle": "@CoachFalaki",
+    "x_url": "https://x.com/CoachFalaki",
+    "recruiting_area": "Washington, D.C., Maryland, Michigan, Ohio, Virginia",
+    "regions": [
+      "Midwest",
+      "Southeast",
+      "West"
+    ],
+    "email": "kfalaki@fas.harvard.edu",
+    "position_group": "Running Backs"
+  },
+  {
+    "conference": "Ivy League",
+    "school": "Harvard",
+    "coach_name": "Logan Johnson",
+    "title": "Defensive Line Coach",
+    "x_handle": "@Coach_Johnson76",
+    "x_url": "https://x.com/Coach_Johnson76",
+    "recruiting_area": "Delaware, Maine, New Hampshire, New York, Pennsylvania, Vermont",
+    "regions": [
+      "Northeast"
+    ],
+    "email": "loganjohnson@fas.harvard.edu",
+    "position_group": "Defensive Line"
+  },
+  {
+    "conference": "Ivy League",
+    "school": "Harvard",
+    "coach_name": "Mickey Fein",
+    "title": "Offensive Coordinator",
+    "x_handle": "@MicFein",
+    "x_url": "https://x.com/MicFein",
+    "recruiting_area": "Connecticut, Massachusetts, New Jersey, Rhode Island",
+    "regions": [
+      "Northeast"
+    ],
+    "email": "mfein@fas.harvard.edu",
+    "position_group": "Offensive Coordinator"
+  },
+  {
+    "conference": "Ivy League",
+    "school": "Harvard",
+    "coach_name": "Paul Amakihe",
+    "title": "Linebackers Coach",
+    "x_handle": "@Coach_Amakihe",
+    "x_url": "https://x.com/Coach_Amakihe",
+    "recruiting_area": "",
+    "regions": [],
+    "email": "pamakihe@fas.harvard.edu",
+    "position_group": "Linebackers"
+  },
+  {
+    "conference": "Ivy League",
+    "school": "Harvard",
+    "coach_name": "Ryan Crawford",
+    "title": "Assistant Head Coach - Defensive Backs",
+    "x_handle": "@coach_craw",
+    "x_url": "https://x.com/coach_craw",
+    "recruiting_area": "North Carolina, South Carolina, Georgia, Tennessee",
+    "regions": [
+      "Southeast"
+    ],
+    "email": "ryan_crawford@fas.harvard.edu",
+    "position_group": "Head Coach"
+  },
+  {
+    "conference": "Ivy League",
+    "school": "Harvard",
+    "coach_name": "Scott Larkee",
+    "title": "Associate Head Coach - Defensive Coordinator",
+    "x_handle": "@ScottLarkee",
+    "x_url": "https://x.com/ScottLarkee",
+    "recruiting_area": "Illinois, Indiana, Minnesota, Wisconsin",
+    "regions": [
+      "Midwest"
+    ],
+    "email": "slarkee@fas.harvard.edu",
+    "position_group": "Head Coach"
+  },
+  {
+    "conference": "Ivy League",
+    "school": "Harvard",
+    "coach_name": "Steven Williams",
+    "title": "Assistant Head Coach / Special Teams Coordinator / Wide Receivers Coach",
+    "x_handle": "@skwilliamsjr",
+    "x_url": "https://x.com/skwilliamsjr",
+    "recruiting_area": "Alabama, Florida, Louisiana, Mississippi",
+    "regions": [
+      "Southeast"
+    ],
+    "email": "skwill@fas.harvard.edu",
+    "position_group": "Head Coach"
+  },
+  {
+    "conference": "Ivy League",
+    "school": "Penn",
+    "coach_name": "Rick Santos",
+    "title": "George A. Munger Head Football Coach",
+    "x_handle": "@rwsantos2",
+    "x_url": "https://x.com/rwsantos2",
+    "recruiting_area": "",
+    "regions": [],
+    "email": "football@pobox.upenn.edu",
+    "position_group": "Head Coach"
+  },
+  {
+    "conference": "Ivy League",
+    "school": "Penn",
+    "coach_name": "David Josephson",
+    "title": "Safeties/Recruiting Coordinator",
+    "x_handle": "@David_Josephson",
+    "x_url": "https://x.com/David_Josephson",
+    "recruiting_area": "Chester County (Pa.), Southern California (Orange, San Bernardino and South), Florida (East Coast), Wyoming, Utah, Idaho, Nevada",
+    "regions": [
+      "Northeast",
+      "Southeast",
+      "West"
+    ],
+    "email": "djoseph1@upenn.edu",
+    "position_group": "Defensive Backs"
+  },
+  {
+    "conference": "Ivy League",
+    "school": "Penn",
+    "coach_name": "Ed Borden",
+    "title": "Tight Ends/Co-Offensive Coordinator",
+    "x_handle": "@Coach_Borden",
+    "x_url": "https://x.com/Coach_Borden",
+    "recruiting_area": "",
+    "regions": [],
+    "email": "eborden@upenn.edu",
+    "position_group": "Offensive Coordinator"
+  },
+  {
+    "conference": "Ivy League",
+    "school": "Penn",
+    "coach_name": "Isaiah Gilmore",
+    "title": "Cornerbacks Coach",
+    "x_handle": "@CoachGilmore_2",
+    "x_url": "https://x.com/CoachGilmore_2",
+    "recruiting_area": "",
+    "regions": [],
+    "email": "gilly@upenn.edu",
+    "position_group": "Running Backs"
+  },
+  {
+    "conference": "Ivy League",
+    "school": "Penn",
+    "coach_name": "Jaysen Thompson",
+    "title": "Defensive Line/Co-Defensive Coordinator",
+    "x_handle": "@CoachThompson_1",
+    "x_url": "https://x.com/CoachThompson_1",
+    "recruiting_area": "",
+    "regions": [],
+    "email": "jaysent@upenn.edu",
+    "position_group": "Defensive Coordinator"
+  },
+  {
+    "conference": "Ivy League",
+    "school": "Penn",
+    "coach_name": "Justin Stovall",
+    "title": "Associate Head Coach/Special Teams Coordinator/Linebackers",
+    "x_handle": "@CoachStoNGo",
+    "x_url": "https://x.com/CoachStoNGo",
+    "recruiting_area": "",
+    "regions": [],
+    "email": "jstovall@upenn.edu",
+    "position_group": "Head Coach"
+  },
+  {
+    "conference": "Ivy League",
+    "school": "Penn",
+    "coach_name": "Nick Della Jacono",
+    "title": "Nickels/Co-Defensive Coordinator",
+    "x_handle": "@coachnickdella_",
+    "x_url": "https://x.com/coachnickdella_",
+    "recruiting_area": "",
+    "regions": [],
+    "email": "ndellaja@upenn.edu",
+    "position_group": "Defensive Coordinator"
+  },
+  {
+    "conference": "Ivy League",
+    "school": "Penn",
+    "coach_name": "Ryan Wilson",
+    "title": "Offensive Line/Co-Offensive Coordinator",
+    "x_handle": "@Coach_Wils",
+    "x_url": "https://x.com/Coach_Wils",
+    "recruiting_area": "",
+    "regions": [],
+    "email": "rpw063@upenn.edu",
+    "position_group": "Offensive Coordinator"
+  },
+  {
+    "conference": "Ivy League",
+    "school": "Penn",
+    "coach_name": "Sean Coyne",
+    "title": "Wide Receivers Coach",
+    "x_handle": "@seancoyne12",
+    "x_url": "https://x.com/seancoyne12",
+    "recruiting_area": "",
+    "regions": [],
+    "email": "scoyne1@upenn.edu",
+    "position_group": "Wide Receivers"
+  },
+  {
+    "conference": "Ivy League",
+    "school": "Penn",
+    "coach_name": "Tommy Herion",
+    "title": "Clarence S. Rockwell, VMD Quarterbacks Coach",
+    "x_handle": "@TommyHerion",
+    "x_url": "https://x.com/TommyHerion",
+    "recruiting_area": "",
+    "regions": [],
+    "email": "therion@upenn.edu",
+    "position_group": "Offensive Coordinator"
+  },
+  {
+    "conference": "Ivy League",
+    "school": "Penn",
+    "coach_name": "Tyree Foreman",
+    "title": "Running Backs Coach",
+    "x_handle": "@CoachForeman42",
+    "x_url": "https://x.com/CoachForeman42",
+    "recruiting_area": "",
+    "regions": [],
+    "email": "forema42@upenn.edu",
+    "position_group": "Running Backs"
+  },
+  {
+    "conference": "Ivy League",
+    "school": "Princeton",
+    "coach_name": "Bob Surace",
+    "title": "Head Football Coach",
+    "x_handle": "@CoachBobSurace",
+    "x_url": "https://x.com/CoachBobSurace",
+    "recruiting_area": "",
+    "regions": [],
+    "email": "football@princeton.edu",
+    "position_group": "Head Coach"
+  },
+  {
+    "conference": "Ivy League",
+    "school": "Princeton",
+    "coach_name": "Austin Triglia",
+    "title": "Outside Linebackers Coach",
+    "x_handle": "@CoachTrigs",
+    "x_url": "https://x.com/CoachTrigs",
+    "recruiting_area": "",
+    "regions": [],
+    "email": "atriglia@princeton.edu",
+    "position_group": "Linebackers"
+  },
+  {
+    "conference": "Ivy League",
+    "school": "Princeton",
+    "coach_name": "Brandon Cuevas",
+    "title": "Offensive Line Coach",
+    "x_handle": "@CoachCuevas78",
+    "x_url": "https://x.com/CoachCuevas78",
+    "recruiting_area": "Connecticut, Massachusetts, Maine, New Hampshire, Rhode Island, Vermont, District of Columbia, Maryland, New Jersey (Morris, Sussex), Canada (International)",
+    "regions": [
+      "International",
+      "Northeast",
+      "Southeast"
+    ],
+    "email": "bacuevas@princeton.edu",
+    "position_group": "Offensive Line"
+  },
+  {
+    "conference": "Ivy League",
+    "school": "Princeton",
+    "coach_name": "Brian Flinn",
+    "title": "Wide Receivers Coach",
+    "x_handle": "@Coach_Flinn",
+    "x_url": "https://x.com/Coach_Flinn",
+    "recruiting_area": "New Jersey (Bergen, Hudson, Passaic), Indiana, Kentucky, Ohio, Pennsylvania (Lehigh Valley, Lebanon...Western PA), West Virginia",
+    "regions": [
+      "Midwest",
+      "Northeast",
+      "Southeast"
+    ],
+    "email": "beflinn@princeton.edu",
+    "position_group": "Wide Receivers"
+  },
+  {
+    "conference": "Ivy League",
+    "school": "Princeton",
+    "coach_name": "EJ Henderson",
+    "title": "Defensive Backs Coach / Co-Defensive Coordinator",
+    "x_handle": "@coachehenderson",
+    "x_url": "https://x.com/coachehenderson",
+    "recruiting_area": "",
+    "regions": [],
+    "email": "ejh@princeton.edu",
+    "position_group": "Defensive Coordinator"
+  },
+  {
+    "conference": "Ivy League",
+    "school": "Princeton",
+    "coach_name": "Jason Nichols",
+    "title": "Running Backs Coach",
+    "x_handle": "@CoachJMNichols",
+    "x_url": "https://x.com/CoachJMNichols",
+    "recruiting_area": "Alabama, Louisiana, Mississippi, North Carolina, South Carolina, Virginia, New York (Upstate)",
+    "regions": [
+      "Northeast",
+      "Southeast"
+    ],
+    "email": "jason.nichols@princeton.edu",
+    "position_group": "Running Backs"
+  },
+  {
+    "conference": "Ivy League",
+    "school": "Princeton",
+    "coach_name": "John Sibel",
+    "title": "Tight Ends Coach",
+    "x_handle": "@CoachSibel",
+    "x_url": "https://x.com/CoachSibel",
+    "recruiting_area": "Alaska, Iowa, Illinois, Kansas, Minnesota, Missouri, North Dakota, Nebraska, South Dakota, Wisconsin, New Jersey (Essex, Union)",
+    "regions": [
+      "Midwest",
+      "Northeast",
+      "West"
+    ],
+    "email": "sibel@princeton.edu",
+    "position_group": "Tight Ends"
+  },
+  {
+    "conference": "Ivy League",
+    "school": "Princeton",
+    "coach_name": "Mark Rosenbaum",
+    "title": "Offensive Coordinator/Quarterbacks Coach",
+    "x_handle": "@CoachRosenbaum",
+    "x_url": "https://x.com/CoachRosenbaum",
+    "recruiting_area": "Arizona, Colorado, Utah, Wyoming, New Jersey (Hunterdon, Warren, Somerset), New York (Long Island, Westchester County, New York City)",
+    "regions": [
+      "Northeast",
+      "West"
+    ],
+    "email": "marktr@princeton.edu",
+    "position_group": "Offensive Coordinator"
+  },
+  {
+    "conference": "Ivy League",
+    "school": "Princeton",
+    "coach_name": "Mike Weick",
+    "title": "Assistant Head Coach / Inside Linebackers Coach / Co-Defensive Coordinator",
+    "x_handle": "@CoachMikeWeick",
+    "x_url": "https://x.com/CoachMikeWeick",
+    "recruiting_area": "Arkansas, New Mexico, Oklahoma, Texas, Southeastern Pennsylvania (Berks, Bucks, Chester, Delaware, Montgomery), New Jersey (Mercer)",
+    "regions": [
+      "Midwest",
+      "Northeast",
+      "Southeast",
+      "Southwest",
+      "West"
+    ],
+    "email": "mweick@princeton.edu",
+    "position_group": "Head Coach"
+  },
+  {
+    "conference": "Ivy League",
+    "school": "Princeton",
+    "coach_name": "Steve Verbit",
+    "title": "Senior Associate Head Coach / Defensive Coordinator",
+    "x_handle": "@SVerbit",
+    "x_url": "https://x.com/SVerbit",
+    "recruiting_area": "California, Delaware, Hawaii, Nevada",
+    "regions": [
+      "Northeast",
+      "West"
+    ],
+    "email": "verbit@princeton.edu",
+    "position_group": "Head Coach"
+  },
+  {
+    "conference": "Ivy League",
+    "school": "Yale",
+    "coach_name": "Kevin Cahill",
+    "title": "Joel E. Smilow '54 Head Coach of Football",
+    "x_handle": "@coach_cahill",
+    "x_url": "https://x.com/coach_cahill",
+    "recruiting_area": "",
+    "regions": [],
+    "email": "kevin.cahill@yale.edu",
+    "position_group": "Head Coach"
+  },
+  {
+    "conference": "Ivy League",
+    "school": "Yale",
+    "coach_name": "Larry Ciotti",
+    "title": "Advisor to Head Coach",
+    "x_handle": "@CoachCiotti",
+    "x_url": "https://x.com/CoachCiotti",
+    "recruiting_area": "",
+    "regions": [],
+    "email": "larry.ciotti@yale.edu",
+    "position_group": "Head Coach"
+  },
+  {
+    "conference": "Ivy League",
+    "school": "Yale",
+    "coach_name": "Chris Bergeski",
+    "title": "Running Backs Coach",
+    "x_handle": "@ChrisBergeski",
+    "x_url": "https://x.com/ChrisBergeski",
+    "recruiting_area": "",
+    "regions": [],
+    "email": "chris.bergeski@yale.edu",
+    "position_group": "Running Backs"
+  },
+  {
+    "conference": "Ivy League",
+    "school": "Yale",
+    "coach_name": "Chris Ostrowsky",
+    "title": "Offensive Coordinator / Quarterbacks",
+    "x_handle": "@CoachOstrowsky",
+    "x_url": "https://x.com/CoachOstrowsky",
+    "recruiting_area": "Connecticut, Massachusetts, New Jersey, Eastern Pennsylvania",
+    "regions": [
+      "Northeast"
+    ],
+    "email": "chris.ostrowsky@yale.edu",
+    "position_group": "Offensive Coordinator"
+  },
+  {
+    "conference": "Ivy League",
+    "school": "Yale",
+    "coach_name": "Jay Anderson",
+    "title": "Co-Defensive Coordinator",
+    "x_handle": "Not found",
+    "x_url": "Not found",
+    "recruiting_area": "",
+    "regions": [],
+    "email": "jay.anderson@yale.edu",
+    "position_group": "Defensive Coordinator"
+  },
+  {
+    "conference": "Ivy League",
+    "school": "Yale",
+    "coach_name": "Marcus Knight",
+    "title": "Wide Receivers Coach",
+    "x_handle": "@maknight3",
+    "x_url": "https://x.com/maknight3",
+    "recruiting_area": "",
+    "regions": [],
+    "email": "marcus.knight@yale.edu",
+    "position_group": "Wide Receivers"
+  },
+  {
+    "conference": "Ivy League",
+    "school": "Yale",
+    "coach_name": "Paul Rice",
+    "title": "Tight Ends Coach",
+    "x_handle": "@paupaupau5",
+    "x_url": "https://x.com/paupaupau5",
+    "recruiting_area": "",
+    "regions": [],
+    "email": "paul.rice@yale.edu",
+    "position_group": "Tight Ends"
+  },
+  {
+    "conference": "Ivy League",
+    "school": "Yale",
+    "coach_name": "Sean McGowan",
+    "title": "Head Coach of Defense",
+    "x_handle": "@coach_smcgowan",
+    "x_url": "https://x.com/coach_smcgowan",
+    "recruiting_area": "Oklahoma, West Texas, North Texas",
+    "regions": [
+      "Southwest"
+    ],
+    "email": "sean.mcgowan@yale.edu",
+    "position_group": "Head Coach"
+  },
+  {
+    "conference": "Ivy League",
+    "school": "Yale",
+    "coach_name": "Stefon Wheeler",
+    "title": "Offensive Line Coach",
+    "x_handle": "@Bigstef72",
+    "x_url": "https://x.com/Bigstef72",
+    "recruiting_area": "",
+    "regions": [],
+    "email": "stefon.wheeler@yale.edu",
+    "position_group": "Offensive Line"
+  },
+  {
+    "conference": "Ivy League",
+    "school": "Yale",
+    "coach_name": "Steven Vashel",
+    "title": "Special Teams Coordinator",
+    "x_handle": "@StevenVashel",
+    "x_url": "https://x.com/StevenVashel",
+    "recruiting_area": "Illinois, Indiana, Iowa, Kansas, Michigan, Minnesota, Missouri, Wisconsin",
+    "regions": [
+      "Midwest"
+    ],
+    "email": "steven.vashel@yale.edu",
+    "position_group": "Special Teams"
+  },
+  {
+    "conference": "Ivy League",
+    "school": "Yale",
+    "coach_name": "Tim Janecek",
+    "title": "Defensive Line Coach, Run Game Coordinator",
+    "x_handle": "@CoachJanecek",
+    "x_url": "https://x.com/CoachJanecek",
+    "recruiting_area": "",
+    "regions": [],
+    "email": "tim.janecek@yale.edu",
+    "position_group": "Defensive Line"
+  },
+  {
+    "conference": "Patriot League",
+    "school": "Bucknell",
+    "coach_name": "Jeff Behrman",
+    "title": "Head Football Coach",
+    "x_handle": "@Jeff_Behrman",
+    "x_url": "https://x.com/Jeff_Behrman",
+    "recruiting_area": "",
+    "regions": [],
+    "email": "jab094@bucknell.edu",
+    "position_group": "Head Coach"
+  },
+  {
+    "conference": "Patriot League",
+    "school": "Bucknell",
+    "coach_name": "Anthony Trotta",
+    "title": "Defensive Line Coach",
+    "x_handle": "@CoachATrotta",
+    "x_url": "https://x.com/CoachATrotta",
+    "recruiting_area": "",
+    "regions": [],
+    "email": "alt016@bucknell.edu",
+    "position_group": "Defensive Line"
+  },
+  {
+    "conference": "Patriot League",
+    "school": "Bucknell",
+    "coach_name": "Jason Nelson",
+    "title": "Assistant Coach (Cornerbacks)",
+    "x_handle": "@Coach_J_Nelson",
+    "x_url": "https://x.com/Coach_J_Nelson",
+    "recruiting_area": "",
+    "regions": [],
+    "email": "jrn008@bucknell.edu",
+    "position_group": "Running Backs"
+  },
+  {
+    "conference": "Patriot League",
+    "school": "Bucknell",
+    "coach_name": "Jeffrey Long Jr",
+    "title": "Defensive Coordinator",
+    "x_handle": "@CoachLongBUFB",
+    "x_url": "https://x.com/CoachLongBUFB",
+    "recruiting_area": "",
+    "regions": [],
+    "email": "jsl018@bucknell.edu",
+    "position_group": "Defensive Coordinator"
+  },
+  {
+    "conference": "Patriot League",
+    "school": "Bucknell",
+    "coach_name": "Joe Collins",
+    "title": "Assistant Coach (QB's)",
+    "x_handle": "@joe_collins17",
+    "x_url": "https://x.com/joe_collins17",
+    "recruiting_area": "",
+    "regions": [],
+    "email": "jrc068@bucknell.edu",
+    "position_group": "Quarterbacks"
+  },
+  {
+    "conference": "Patriot League",
+    "school": "Bucknell",
+    "coach_name": "Joseph Torok",
+    "title": "Running Backs Coach",
+    "x_handle": "@joey_torok",
+    "x_url": "https://x.com/joey_torok",
+    "recruiting_area": "",
+    "regions": [],
+    "email": "jt049@bucknell.edu",
+    "position_group": "Running Backs"
+  },
+  {
+    "conference": "Patriot League",
+    "school": "Bucknell",
+    "coach_name": "Mac Austin",
+    "title": "Tight Ends Coach",
+    "x_handle": "@MacAustin_",
+    "x_url": "https://x.com/MacAustin_",
+    "recruiting_area": "",
+    "regions": [],
+    "email": "mka006@bucknell.edu",
+    "position_group": "Tight Ends"
+  },
+  {
+    "conference": "Patriot League",
+    "school": "Bucknell",
+    "coach_name": "McNeil Parker",
+    "title": "Safeties Coach / Defensive Pass Game Coordinator",
+    "x_handle": "@McNeilParker",
+    "x_url": "https://x.com/McNeilParker",
+    "recruiting_area": "New England",
+    "regions": [
+      "Northeast"
+    ],
+    "email": "mp059@bucknell.edu",
+    "position_group": "Defensive Backs"
+  },
+  {
+    "conference": "Patriot League",
+    "school": "Bucknell",
+    "coach_name": "Rex Rover",
+    "title": "Wide Receivers Coach / Recruiting Coordinator",
+    "x_handle": "@rex_rover",
+    "x_url": "https://x.com/rex_rover",
+    "recruiting_area": "",
+    "regions": [],
+    "email": "rrr018@bucknell.edu",
+    "position_group": "Wide Receivers"
+  },
+  {
+    "conference": "Patriot League",
+    "school": "Bucknell",
+    "coach_name": "Travis James",
+    "title": "Offensive Coordinator",
+    "x_handle": "@FBCoachTJ",
+    "x_url": "https://x.com/FBCoachTJ",
+    "recruiting_area": "",
+    "regions": [],
+    "email": "taj011@bucknell.edu",
+    "position_group": "Offensive Coordinator"
+  },
+  {
+    "conference": "Patriot League",
+    "school": "Colgate",
+    "coach_name": "Curt Fitzpatrick",
+    "title": "Fred '50 and Marilyn Dunlap Head Football Coach",
+    "x_handle": "@_CoachFitz",
+    "x_url": "https://x.com/_CoachFitz",
+    "recruiting_area": "New York Sec 3/4/10, Alaska and Hawaii",
+    "regions": [
+      "Northeast",
+      "West"
+    ],
+    "email": "colgatefootball@colgate.edu",
+    "position_group": "Head Coach"
+  },
+  {
+    "conference": "Patriot League",
+    "school": "Colgate",
+    "coach_name": "Dalton McCrann",
+    "title": "Recruiting Coordinator / Tight Ends Coach",
+    "x_handle": "@Coach_McCrann",
+    "x_url": "https://x.com/Coach_McCrann",
+    "recruiting_area": "New Jersey (South), Pennsylvania (Philly), North Carolina (CLT/RDU), South Carolina and Colorado",
+    "regions": [
+      "Northeast",
+      "Southeast",
+      "West"
+    ],
+    "email": "dmccrann@colgate.edu",
+    "position_group": "Tight Ends"
+  },
+  {
+    "conference": "Patriot League",
+    "school": "Colgate",
+    "coach_name": "Greg DeLade",
+    "title": "Defensive Line Coach",
+    "x_handle": "@CoachDeLade",
+    "x_url": "https://x.com/CoachDeLade",
+    "recruiting_area": "Pennsylvania (Lehigh Valley/NEPA), Georgia (ATL), Florida (Panhandle), Alabama, Mississippi and Arkansas",
+    "regions": [
+      "Midwest",
+      "Northeast",
+      "Southeast"
+    ],
+    "email": "gdelade@colgate.edu",
+    "position_group": "Defensive Line"
+  },
+  {
+    "conference": "Patriot League",
+    "school": "Colgate",
+    "coach_name": "Joe Gerbino",
+    "title": "Wide Receivers Coach and Passing Game Coordinator",
+    "x_handle": "@CoachGerbino",
+    "x_url": "https://x.com/CoachGerbino",
+    "recruiting_area": "New Jersey (North), Florida (Central and South), Nevada and Arizona",
+    "regions": [
+      "Northeast",
+      "Southeast",
+      "West"
+    ],
+    "email": "jgerbino@colgate.edu",
+    "position_group": "Wide Receivers"
+  },
+  {
+    "conference": "Patriot League",
+    "school": "Colgate",
+    "coach_name": "Josh Ison",
+    "title": "Special Teams Coordinator/Inside Linebackers Coach",
+    "x_handle": "@Ison50",
+    "x_url": "https://x.com/Ison50",
+    "recruiting_area": "Ohio, Texas (Houston/San Antonio), Kansas, Missouri, Michigan and Louisiana",
+    "regions": [
+      "Midwest",
+      "Southeast",
+      "Southwest"
+    ],
+    "email": "jison@colgate.edu",
+    "position_group": "Special Teams"
+  },
+  {
+    "conference": "Patriot League",
+    "school": "Colgate",
+    "coach_name": "Omar King",
+    "title": "Running Backs Coach / Pro Liaison",
+    "x_handle": "@okingcoach",
+    "x_url": "https://x.com/okingcoach",
+    "recruiting_area": "New York Sec 1/2/7/8/9/11 (NYC), Tennessee and New Mexico",
+    "regions": [
+      "Northeast",
+      "Southeast",
+      "West"
+    ],
+    "email": "oking@colgate.edu",
+    "position_group": "Running Backs"
+  },
+  {
+    "conference": "Patriot League",
+    "school": "Colgate",
+    "coach_name": "Patrick Rotchford",
+    "title": "Run Game Coordinator/Offensive Line Coach",
+    "x_handle": "@CoachRotch",
+    "x_url": "https://x.com/CoachRotch",
+    "recruiting_area": "New York Sec 5/6, Western PA (WPIAL), TX (Dallas/Austin), West Virginia and Oklahoma",
+    "regions": [
+      "Northeast",
+      "Southeast",
+      "Southwest"
+    ],
+    "email": "protchford@colgate.edu",
+    "position_group": "Offensive Line"
+  },
+  {
+    "conference": "Patriot League",
+    "school": "Colgate",
+    "coach_name": "Taj-Amir Torres",
+    "title": "Assistant Football Coach/Cornerbacks",
+    "x_handle": "@TajamirTorres",
+    "x_url": "https://x.com/TajamirTorres",
+    "recruiting_area": "New England, Pennsylvania (Central), California (No. California) and Oregon",
+    "regions": [
+      "Northeast",
+      "West"
+    ],
+    "email": "ttorres@colgate.edu",
+    "position_group": "Running Backs"
+  },
+  {
+    "conference": "Patriot League",
+    "school": "Colgate",
+    "coach_name": "Tom Biscardi",
+    "title": "Outside Linebackers Coach",
+    "x_handle": "@CoachTBiscardi",
+    "x_url": "https://x.com/CoachTBiscardi",
+    "recruiting_area": "Maryland, Washington, D.C., Virginia, Delaware, Kentucky and Indiana",
+    "regions": [
+      "Midwest",
+      "Northeast",
+      "Southeast",
+      "West"
+    ],
+    "email": "tbiscardi@colgate.edu",
+    "position_group": "Linebackers"
+  },
+  {
+    "conference": "Patriot League",
+    "school": "Colgate",
+    "coach_name": "Trevor Warner",
+    "title": "Defensive Coordinator/Safeties",
+    "x_handle": "@_CoachWarner",
+    "x_url": "https://x.com/_CoachWarner",
+    "recruiting_area": "Illinois (Chicago), California (So. California), Wisconsin and Minnesota",
+    "regions": [
+      "Midwest",
+      "West"
+    ],
+    "email": "twarner@colgate.edu",
+    "position_group": "Defensive Coordinator"
+  },
+  {
+    "conference": "Patriot League",
+    "school": "Fordham",
+    "coach_name": "Joe Conlin",
+    "title": "Head Football Coach",
+    "x_handle": "@Coach_Conlin",
+    "x_url": "https://x.com/Coach_Conlin",
+    "recruiting_area": "",
+    "regions": [],
+    "email": "No email listed",
+    "position_group": "Head Coach"
+  },
+  {
+    "conference": "Patriot League",
+    "school": "Fordham",
+    "coach_name": "Art Asselta",
+    "title": "Associate Head Coach/Offensive Coordinator/Quarterbacks",
+    "x_handle": "@ArtAsselta",
+    "x_url": "https://x.com/ArtAsselta",
+    "recruiting_area": "NYC/N. NJ, Dallas FW SW of I-35 & S of I-20",
+    "regions": [
+      "Northeast",
+      "Southwest"
+    ],
+    "email": "aasselta2@fordham.edu",
+    "position_group": "Head Coach"
+  },
+  {
+    "conference": "Patriot League",
+    "school": "Fordham",
+    "coach_name": "Ben Mason",
+    "title": "Assistant Coach - Tight Ends",
+    "x_handle": "@benchmason42",
+    "x_url": "https://x.com/benchmason42",
+    "recruiting_area": "",
+    "regions": [],
+    "email": "No email listed",
+    "position_group": "Tight Ends"
+  },
+  {
+    "conference": "Patriot League",
+    "school": "Fordham",
+    "coach_name": "Diamond Weaver",
+    "title": "Assistant Coach - Cornerbacks",
+    "x_handle": "@coach_weaver",
+    "x_url": "https://x.com/coach_weaver",
+    "recruiting_area": "New York Section 5/6, Houston Metro, Northern California",
+    "regions": [
+      "Northeast",
+      "Southwest",
+      "West"
+    ],
+    "email": "dweaver5@fordham.edu",
+    "position_group": "Running Backs"
+  },
+  {
+    "conference": "Patriot League",
+    "school": "Fordham",
+    "coach_name": "Jake Petrarca",
+    "title": "Wide Receivers Coach",
+    "x_handle": "@CoachPetrarca",
+    "x_url": "https://x.com/CoachPetrarca",
+    "recruiting_area": "",
+    "regions": [],
+    "email": "jpetrarca1@fordham.edu",
+    "position_group": "Wide Receivers"
+  },
+  {
+    "conference": "Patriot League",
+    "school": "Fordham",
+    "coach_name": "James Lenahan",
+    "title": "Assistant Coach - Safeties",
+    "x_handle": "@CoachLenahan",
+    "x_url": "https://x.com/CoachLenahan",
+    "recruiting_area": "",
+    "regions": [],
+    "email": "jlenahan4@fordham.edu",
+    "position_group": "Defensive Backs"
+  },
+  {
+    "conference": "Patriot League",
+    "school": "Fordham",
+    "coach_name": "Pushaun Brown",
+    "title": "Assistant Coach - Running Backs",
+    "x_handle": "@PBrown_2",
+    "x_url": "https://x.com/PBrown_2",
+    "recruiting_area": "New Jersey/East Pennsylvania",
+    "regions": [
+      "Northeast"
+    ],
+    "email": "pbrown53@fordham.edu",
+    "position_group": "Running Backs"
+  },
+  {
+    "conference": "Patriot League",
+    "school": "Fordham",
+    "coach_name": "Steven Ciocci",
+    "title": "Assistant Coach - Offensive Line",
+    "x_handle": "@CoachCiocci",
+    "x_url": "https://x.com/CoachCiocci",
+    "recruiting_area": "Florida East Coast, Ohio South of I-70, and SE Georgia",
+    "regions": [
+      "Midwest",
+      "Southeast"
+    ],
+    "email": "sciocci@fordham.edu",
+    "position_group": "Offensive Line"
+  },
+  {
+    "conference": "Patriot League",
+    "school": "Fordham",
+    "coach_name": "Trent Kauffman",
+    "title": "Assistant Coach - Outside Linebackers",
+    "x_handle": "@coach_kauffman1",
+    "x_url": "https://x.com/coach_kauffman1",
+    "recruiting_area": "",
+    "regions": [],
+    "email": "tkauffman1@fordham.edu",
+    "position_group": "Linebackers"
+  },
+  {
+    "conference": "Patriot League",
+    "school": "Georgetown",
+    "coach_name": "Rob Sgarlata",
+    "title": "Head Football Coach",
+    "x_handle": "@coachsgarlata",
+    "x_url": "https://x.com/coachsgarlata",
+    "recruiting_area": "",
+    "regions": [],
+    "email": "football@georgetown.edu",
+    "position_group": "Head Coach"
+  },
+  {
+    "conference": "Patriot League",
+    "school": "Georgetown",
+    "coach_name": "Cam Spence",
+    "title": "Defensive Line Coach",
+    "x_handle": "@Only1CamSpence",
+    "x_url": "https://x.com/Only1CamSpence",
+    "recruiting_area": "",
+    "regions": [],
+    "email": "cam.spence@georgetown.edu",
+    "position_group": "Defensive Line"
+  },
+  {
+    "conference": "Patriot League",
+    "school": "Georgetown",
+    "coach_name": "Gary Ramey Jr",
+    "title": "RBs/TEs Coach & Recruiting Coordinator",
+    "x_handle": "@CoachRamey_",
+    "x_url": "https://x.com/CoachRamey_",
+    "recruiting_area": "",
+    "regions": [],
+    "email": "gr648@georgetown.edu",
+    "position_group": "Running Backs"
+  },
+  {
+    "conference": "Patriot League",
+    "school": "Georgetown",
+    "coach_name": "Joey Partin",
+    "title": "Offensive Line / Run Game Coordinator",
+    "x_handle": "@CoachPartin",
+    "x_url": "https://x.com/CoachPartin",
+    "recruiting_area": "West Atlanta, Chicago, St. Louis (National); Winchester, Warren, Clarke, Richmond (Local)",
+    "regions": [
+      "Midwest",
+      "Northeast",
+      "Southeast"
+    ],
+    "email": "rp1153@georgetown.edu",
+    "position_group": "Offensive Line"
+  },
+  {
+    "conference": "Patriot League",
+    "school": "Georgetown",
+    "coach_name": "Kevin Doherty",
+    "title": "Defensive Coordinator",
+    "x_handle": "@coachkrd",
+    "x_url": "https://x.com/coachkrd",
+    "recruiting_area": "National: South Florida, New England",
+    "regions": [
+      "Northeast",
+      "Southeast"
+    ],
+    "email": "krd47@georgetown.edu",
+    "position_group": "Defensive Coordinator"
+  },
+  {
+    "conference": "Patriot League",
+    "school": "Georgetown",
+    "coach_name": "Kuony Deng",
+    "title": "Outside Linebackers Coach",
+    "x_handle": "Not found",
+    "x_url": "Not found",
+    "recruiting_area": "Alabama",
+    "regions": [
+      "Southeast"
+    ],
+    "email": "kd985@georgetown.edu",
+    "position_group": "Linebackers"
+  },
+  {
+    "conference": "Patriot League",
+    "school": "Georgetown",
+    "coach_name": "Kyle Purkey",
+    "title": "Defensive Backs Coach",
+    "x_handle": "@CoachPurk",
+    "x_url": "https://x.com/CoachPurk",
+    "recruiting_area": "",
+    "regions": [],
+    "email": "kp981@georgetown.edu",
+    "position_group": "Defensive Backs"
+  },
+  {
+    "conference": "Patriot League",
+    "school": "Georgetown",
+    "coach_name": "Rob Spence",
+    "title": "Offensive Coordinator/Quarterbacks",
+    "x_handle": "@CoachRSpence",
+    "x_url": "https://x.com/CoachRSpence",
+    "recruiting_area": "National: New Jersey, New York, Tennessee; DMV Counties: Montgomery (Md.), Fairfax, Falls Church (Va.)",
+    "regions": [
+      "Northeast",
+      "Southeast"
+    ],
+    "email": "rs1966@georgetown.edu",
+    "position_group": "Offensive Coordinator"
+  },
+  {
+    "conference": "Patriot League",
+    "school": "Georgetown",
+    "coach_name": "Stephen Amoako",
+    "title": "Wide Receivers Coach",
+    "x_handle": "@CoachAmoako",
+    "x_url": "https://x.com/CoachAmoako",
+    "recruiting_area": "Northern California, Pacific Northwest, Rocky Mountains/Big Sky Regions",
+    "regions": [
+      "West"
+    ],
+    "email": "sa2144@georgetown.edu",
+    "position_group": "Wide Receivers"
+  },
+  {
+    "conference": "Patriot League",
+    "school": "Georgetown",
+    "coach_name": "Trey Henderson",
+    "title": "Special Teams Coordinator / Linebackers",
+    "x_handle": "@CoachTreyHen",
+    "x_url": "https://x.com/CoachTreyHen",
+    "recruiting_area": "National: Ohio, East Dallas; DMV Counties: Fredericksburg, Spotsylvania, Stafford (Va.)",
+    "regions": [
+      "Midwest",
+      "Southeast",
+      "Southwest"
+    ],
+    "email": "hh763@georgetown.edu",
+    "position_group": "Special Teams"
+  },
+  {
+    "conference": "Patriot League",
+    "school": "Holy Cross",
+    "coach_name": "Dan Curran",
+    "title": "Head Coach",
+    "x_handle": "@CoachDanCurran",
+    "x_url": "https://x.com/CoachDanCurran",
+    "recruiting_area": "",
+    "regions": [],
+    "email": "dcurran@holycross.edu",
+    "position_group": "Head Coach"
+  },
+  {
+    "conference": "Patriot League",
+    "school": "Holy Cross",
+    "coach_name": "Andrew Dresner",
+    "title": "Offensive Coordinator / Quarterbacks",
+    "x_handle": "@CoachDresner",
+    "x_url": "https://x.com/CoachDresner",
+    "recruiting_area": "New York City and State [Section I (Dutchess, Putnam, Rockland, Westchester); Section IX (Orange, Sullivan, Ulster); Section VIII (Nassau); Section XI (Suffolk)]; all quarterbacks nationally",
+    "regions": [
+      "Northeast"
+    ],
+    "email": "adresner@holycross.edu",
+    "position_group": "Offensive Coordinator"
+  },
+  {
+    "conference": "Patriot League",
+    "school": "Holy Cross",
+    "coach_name": "Bo Alexander",
+    "title": "Defensive Line Coach",
+    "x_handle": "@CoachBoAlex",
+    "x_url": "https://x.com/CoachBoAlex",
+    "recruiting_area": "South Florida / Atlanta, Georgia",
+    "regions": [
+      "Southeast"
+    ],
+    "email": "jalexander@holycross.edu",
+    "position_group": "Defensive Line"
+  },
+  {
+    "conference": "Patriot League",
+    "school": "Holy Cross",
+    "coach_name": "Brian Vaganek",
+    "title": "Defensive Coordinator",
+    "x_handle": "@CoachVaganek",
+    "x_url": "https://x.com/CoachVaganek",
+    "recruiting_area": "Northern New Jersey, Central/Southwest Florida, Rhode Island",
+    "regions": [
+      "Northeast",
+      "Southeast"
+    ],
+    "email": "bvaganek@holycross.edu",
+    "position_group": "Defensive Coordinator"
+  },
+  {
+    "conference": "Patriot League",
+    "school": "Holy Cross",
+    "coach_name": "Bryan Robbat",
+    "title": "Associate Head Coach / Special Teams Coordinator / Secondary",
+    "x_handle": "@CoachRobbat",
+    "x_url": "https://x.com/CoachRobbat",
+    "recruiting_area": "Maryland, Virginia",
+    "regions": [
+      "Southeast"
+    ],
+    "email": "brobbat@holycross.edu",
+    "position_group": "Head Coach"
+  },
+  {
+    "conference": "Patriot League",
+    "school": "Holy Cross",
+    "coach_name": "Jesse Monteiro",
+    "title": "Safeties Coach",
+    "x_handle": "@CoachJ_Mont",
+    "x_url": "https://x.com/CoachJ_Mont",
+    "recruiting_area": "Central Massachusetts, Southern New Jersey, Delaware, Eastern Pennsylvania",
+    "regions": [
+      "Northeast"
+    ],
+    "email": "jmonteiro@holycross.edu",
+    "position_group": "Defensive Backs"
+  },
+  {
+    "conference": "Patriot League",
+    "school": "Holy Cross",
+    "coach_name": "Jimmy Walsh",
+    "title": "Special Teams Coordinator / Linebackers Coach",
+    "x_handle": "@Coach_JWalsh",
+    "x_url": "https://x.com/Coach_JWalsh",
+    "recruiting_area": "Illinois, Michigan, Indiana",
+    "regions": [
+      "Midwest"
+    ],
+    "email": "jiwalsh@holycross.edu",
+    "position_group": "Special Teams"
+  },
+  {
+    "conference": "Patriot League",
+    "school": "Holy Cross",
+    "coach_name": "Matt Schell",
+    "title": "Offensive Coordinator / Tight Ends / Recruiting Coordinator",
+    "x_handle": "@CoachSchell_",
+    "x_url": "https://x.com/CoachSchell_",
+    "recruiting_area": "Connecticut, Texas",
+    "regions": [
+      "Northeast",
+      "Southwest"
+    ],
+    "email": "mschell@holycross.edu",
+    "position_group": "Offensive Coordinator"
+  },
+  {
+    "conference": "Patriot League",
+    "school": "Holy Cross",
+    "coach_name": "Mike Pucko",
+    "title": "Assistant Defensive Line Coach",
+    "x_handle": "Not found",
+    "x_url": "Not found",
+    "recruiting_area": "",
+    "regions": [],
+    "email": "mpucko@holycross.edu",
+    "position_group": "Defensive Line"
+  },
+  {
+    "conference": "Patriot League",
+    "school": "Holy Cross",
+    "coach_name": "Patrick Denecke",
+    "title": "Offensive Line Coach",
+    "x_handle": "Not found",
+    "x_url": "Not found",
+    "recruiting_area": "Western/Central Pennsylvania, Upstate/Western New York, Canada",
+    "regions": [
+      "International",
+      "Northeast"
+    ],
+    "email": "pdenecke@holycross.edu",
+    "position_group": "Offensive Line"
+  },
+  {
+    "conference": "Patriot League",
+    "school": "Holy Cross",
+    "coach_name": "Rich Gunnell",
+    "title": "Assistant Head Coach / Wide Receivers",
+    "x_handle": "@CoachRG18",
+    "x_url": "https://x.com/CoachRG18",
+    "recruiting_area": "Eastern Massachusetts, New Hampshire, Vermont, Maine, Ohio",
+    "regions": [
+      "Midwest",
+      "Northeast"
+    ],
+    "email": "rgunnell@holycross.edu",
+    "position_group": "Head Coach"
+  },
+  {
+    "conference": "Patriot League",
+    "school": "Holy Cross",
+    "coach_name": "Westin Elliott",
+    "title": "Running Backs Coach",
+    "x_handle": "@CoachElliott10",
+    "x_url": "https://x.com/CoachElliott10",
+    "recruiting_area": "Texas",
+    "regions": [
+      "Southwest"
+    ],
+    "email": "welliott@holycross.edu",
+    "position_group": "Running Backs"
+  },
+  {
+    "conference": "Patriot League",
+    "school": "Lafayette",
+    "coach_name": "John Troxell",
+    "title": "Fred M. Kirby II '42 Head Football Coach",
+    "x_handle": "@Coach__Trox",
+    "x_url": "https://x.com/Coach__Trox",
+    "recruiting_area": "",
+    "regions": [],
+    "email": "troxejoh@lafayette.edu",
+    "position_group": "Head Coach"
+  },
+  {
+    "conference": "Patriot League",
+    "school": "Lafayette",
+    "coach_name": "Andrew Seumalo",
+    "title": "Recruiting Coordinator/Inside Linebackers",
+    "x_handle": "Not found",
+    "x_url": "Not found",
+    "recruiting_area": "Pennsylvania (Harrisburg), New York/New York City/Long Island, Texas (Dallas Fort Worth & Waco), Tennessee, Alaska, Northern California, Hawaii, Washington, Oregon",
+    "regions": [
+      "Northeast",
+      "Southeast",
+      "Southwest",
+      "West"
+    ],
+    "email": "seumaloa@lafayette.edu",
+    "position_group": "Linebackers"
+  },
+  {
+    "conference": "Patriot League",
+    "school": "Lafayette",
+    "coach_name": "Anthony Johnson",
+    "title": "Running Backs Coach",
+    "x_handle": "@coachjallday6",
+    "x_url": "https://x.com/coachjallday6",
+    "recruiting_area": "Maryland, DC, Virginia, West Florida, West Virginia",
+    "regions": [
+      "Southeast"
+    ],
+    "email": "johnanth@lafayette.edu",
+    "position_group": "Running Backs"
+  },
+  {
+    "conference": "Patriot League",
+    "school": "Lafayette",
+    "coach_name": "Donavon Nathaniel",
+    "title": "Outside Linebackers Coach",
+    "x_handle": "@CoachDonn_",
+    "x_url": "https://x.com/CoachDonn_",
+    "recruiting_area": "",
+    "regions": [],
+    "email": "nathanid@lafayette.edu",
+    "position_group": "Linebackers"
+  },
+  {
+    "conference": "Patriot League",
+    "school": "Lafayette",
+    "coach_name": "Jeff Sejour",
+    "title": "Cornerbacks Coach",
+    "x_handle": "@CoachSejour",
+    "x_url": "https://x.com/CoachSejour",
+    "recruiting_area": "Northern New Jersey, Upstate New York, Northern Virginia, Alabama, Mississippi, Arkansas, Iowa",
+    "regions": [
+      "Midwest",
+      "Northeast",
+      "Southeast"
+    ],
+    "email": "sejourj@lafayette.edu",
+    "position_group": "Running Backs"
+  },
+  {
+    "conference": "Patriot League",
+    "school": "Lafayette",
+    "coach_name": "Kevin Baumann",
+    "title": "Assistant Head Coach/Offensive Line",
+    "x_handle": "@CoachKBaumann",
+    "x_url": "https://x.com/CoachKBaumann",
+    "recruiting_area": "Southern New Jersey, Ohio, Michigan, Nebraska, North Dakota, South Dakota, Wisconsin",
+    "regions": [
+      "Midwest",
+      "Northeast"
+    ],
+    "email": "baumannk@lafayette.edu",
+    "position_group": "Head Coach"
+  },
+  {
+    "conference": "Patriot League",
+    "school": "Lafayette",
+    "coach_name": "Meade Clendaniel",
+    "title": "Safeties Coach",
+    "x_handle": "@MCthedc",
+    "x_url": "https://x.com/MCthedc",
+    "recruiting_area": "Maryland, Pennsylvania (Adams & Franklin County), Delaware, North Carolina, South Carolina, Kentucky, Indiana",
+    "regions": [
+      "Midwest",
+      "Northeast",
+      "Southeast"
+    ],
+    "email": "clendanm@lafayette.edu",
+    "position_group": "Defensive Backs"
+  },
+  {
+    "conference": "Patriot League",
+    "school": "Lafayette",
+    "coach_name": "Mike Saint Germain",
+    "title": "Defensive Coordinator/Defensive Line",
+    "x_handle": "@Coach_Saint",
+    "x_url": "https://x.com/Coach_Saint",
+    "recruiting_area": "Northern New Jersey, Texas (Houston), Louisiana",
+    "regions": [
+      "Northeast",
+      "Southeast",
+      "Southwest"
+    ],
+    "email": "saintgem@lafayette.edu",
+    "position_group": "Defensive Coordinator"
+  },
+  {
+    "conference": "Patriot League",
+    "school": "Lafayette",
+    "coach_name": "Ryan Roeder",
+    "title": "Passing Game Coordinator/Wide Receivers Coach",
+    "x_handle": "@CoachRoeder",
+    "x_url": "https://x.com/CoachRoeder",
+    "recruiting_area": "Northeastern Pennsylvania, Central Pennsylvania, Texas (Austin & San Antonio), Massachusetts, Maine, New Hampshire, Rhode Island, Vermont",
+    "regions": [
+      "Northeast",
+      "Southwest"
+    ],
+    "email": "roederr@lafayette.edu",
+    "position_group": "Wide Receivers"
+  },
+  {
+    "conference": "Patriot League",
+    "school": "Lafayette",
+    "coach_name": "T.J. DiMuzio",
+    "title": "Offensive Coordinator/Quarterbacks",
+    "x_handle": "@CoachTJD",
+    "x_url": "https://x.com/CoachTJD",
+    "recruiting_area": "Pennsylvania (Philadelphia), Central New Jersey, Connecticut, Eastern Florida, Missouri, Kansas, Oklahoma",
+    "regions": [
+      "Midwest",
+      "Northeast",
+      "Southeast",
+      "Southwest"
+    ],
+    "email": "dimuziot@lafayette.edu",
+    "position_group": "Offensive Coordinator"
+  },
+  {
+    "conference": "Patriot League",
+    "school": "Lafayette",
+    "coach_name": "Tyler Noll",
+    "title": "Tight Ends Coach",
+    "x_handle": "@Coach_Noll",
+    "x_url": "https://x.com/Coach_Noll",
+    "recruiting_area": "Western Pennsylvania, Central New Jersey, East Florida, Southern California, Arizona, New Mexico, Nevada",
+    "regions": [
+      "Northeast",
+      "Southeast",
+      "West"
+    ],
+    "email": "nollt@lafayette.edu",
+    "position_group": "Tight Ends"
+  },
+  {
+    "conference": "Patriot League",
+    "school": "Lehigh",
+    "coach_name": "Richard Nagy",
+    "title": "Vandergrift Family Head Football Coach",
+    "x_handle": "@CoachRichNagy",
+    "x_url": "https://x.com/CoachRichNagy",
+    "recruiting_area": "Southern California, Connecticut, Maine, Massachusetts, New Hampshire, Rhode Island, Vermont",
+    "regions": [
+      "Northeast",
+      "West"
+    ],
+    "email": "emb2@lehigh.edu",
+    "position_group": "Head Coach"
+  },
+  {
+    "conference": "Patriot League",
+    "school": "Lehigh",
+    "coach_name": "Bobby Bozym",
+    "title": "Tight Ends Coach",
+    "x_handle": "@CoachBozym",
+    "x_url": "https://x.com/CoachBozym",
+    "recruiting_area": "Illinois, Indiana, Minnesota, Missouri, Wisconsin, and Pennsylvania Districts 4, 5, 6, and 9",
+    "regions": [
+      "Midwest",
+      "Northeast"
+    ],
+    "email": "rob223@lehigh.edu",
+    "position_group": "Tight Ends"
+  },
+  {
+    "conference": "Patriot League",
+    "school": "Lehigh",
+    "coach_name": "Chavarr Warren",
+    "title": "Running Backs Coach",
+    "x_handle": "@CoachWarren1911",
+    "x_url": "https://x.com/CoachWarren1911",
+    "recruiting_area": "Arkansas, Delaware, Louisiana, Mississippi, Southern New Jersey, New York City and Long Island, Oklahoma, and Pennsylvania (District 12)",
+    "regions": [
+      "Midwest",
+      "Northeast",
+      "Southeast",
+      "Southwest"
+    ],
+    "email": "ctw223@lehigh.edu",
+    "position_group": "Running Backs"
+  },
+  {
+    "conference": "Patriot League",
+    "school": "Lehigh",
+    "coach_name": "Dan Hunt",
+    "title": "Associate Head Coach/Offensive Coordinator/Quarterbacks Coach",
+    "x_handle": "@CoachDanHunt",
+    "x_url": "https://x.com/CoachDanHunt",
+    "recruiting_area": "South Florida, New York (Rest of State), Pennsylvania (District 3)",
+    "regions": [
+      "Northeast",
+      "Southeast"
+    ],
+    "email": "dah323@lehigh.edu",
+    "position_group": "Head Coach"
+  },
+  {
+    "conference": "Patriot League",
+    "school": "Lehigh",
+    "coach_name": "Jeff Comissiong",
+    "title": "Defensive Run Game Coordinator/Defensive Line Coach",
+    "x_handle": "@jeffcomissiong",
+    "x_url": "https://x.com/jeffcomissiong",
+    "recruiting_area": "",
+    "regions": [],
+    "email": "jec425@lehigh.edu",
+    "position_group": "Defensive Line"
+  },
+  {
+    "conference": "Patriot League",
+    "school": "Lehigh",
+    "coach_name": "Keeon Shaw",
+    "title": "Cornerbacks Coach",
+    "x_handle": "@CoachKeeonShaw",
+    "x_url": "https://x.com/CoachKeeonShaw",
+    "recruiting_area": "Maryland, Virginia, District of Columbia, and Houston Metro (Texas) Lehigh Athletics",
+    "regions": [
+      "Southeast",
+      "Southwest"
+    ],
+    "email": "dks224@lehigh.edu",
+    "position_group": "Running Backs"
+  },
+  {
+    "conference": "Patriot League",
+    "school": "Lehigh",
+    "coach_name": "Mark McMaster",
+    "title": "Wide Receivers Coach/Recruiting Coordinator",
+    "x_handle": "@LU_CoachMac",
+    "x_url": "https://x.com/LU_CoachMac",
+    "recruiting_area": "Alaska, Arizona, Canada, Georgia (Atlanta East), New Jersey (Morris, Hunterdon, Mercer, Somerset, Sussex), Pennsylvania (Lehigh Valley, District 2)",
+    "regions": [
+      "International",
+      "Northeast",
+      "Southeast",
+      "West"
+    ],
+    "email": "mdm323@lehigh.edu",
+    "position_group": "Wide Receivers"
+  },
+  {
+    "conference": "Patriot League",
+    "school": "Lehigh",
+    "coach_name": "Mike Kashurba",
+    "title": "Defensive Coordinator/Defensive Backs Coach",
+    "x_handle": "@Coach_MikeKash",
+    "x_url": "https://x.com/Coach_MikeKash",
+    "recruiting_area": "Alabama, Georgia (Atlanta West), Pennsylvania (Districts 7 and 8), and West Virginia",
+    "regions": [
+      "Northeast",
+      "Southeast"
+    ],
+    "email": "mdk218@lehigh.edu",
+    "position_group": "Defensive Coordinator"
+  },
+  {
+    "conference": "Patriot League",
+    "school": "Lehigh",
+    "coach_name": "Mike Morita",
+    "title": "Assistant Offensive Coordinator/Offensive Line Coach",
+    "x_handle": "@CoachMorita",
+    "x_url": "https://x.com/CoachMorita",
+    "recruiting_area": "Northern California, Hawaii, North Carolina, Pennsylvania (District 1), South Carolina, and Tennessee (Lehigh Athletics)",
+    "regions": [
+      "Northeast",
+      "Southeast",
+      "West"
+    ],
+    "email": "mgm423@lehigh.edu",
+    "position_group": "Offensive Coordinator"
+  },
+  {
+    "conference": "Patriot League",
+    "school": "Lehigh",
+    "coach_name": "Tom Jurkovec",
+    "title": "Linebackers Coach",
+    "x_handle": "@CoachJurkovec",
+    "x_url": "https://x.com/CoachJurkovec",
+    "recruiting_area": "",
+    "regions": [],
+    "email": "tjj425@lehigh.edu",
+    "position_group": "Linebackers"
+  },
+  {
+    "conference": "Patriot League",
+    "school": "Richmond",
+    "coach_name": "Russ Huesman",
+    "title": "Head Football Coach",
+    "x_handle": "@RussHuesman",
+    "x_url": "https://x.com/RussHuesman",
+    "recruiting_area": "",
+    "regions": [],
+    "email": "rhuesman@richmond.edu",
+    "position_group": "Head Coach"
+  },
+  {
+    "conference": "Patriot League",
+    "school": "Richmond",
+    "coach_name": "Chris Ellis",
+    "title": "Defensive Ends Coach",
+    "x_handle": "@C_Ellis85",
+    "x_url": "https://x.com/C_Ellis85",
+    "recruiting_area": "",
+    "regions": [],
+    "email": "cellis2@richmond.edu",
+    "position_group": "Coaching Staff"
+  },
+  {
+    "conference": "Patriot League",
+    "school": "Richmond",
+    "coach_name": "Drew Anthony",
+    "title": "Safeties/Special Teams Coordinator",
+    "x_handle": "@CoachAnthonyFB",
+    "x_url": "https://x.com/CoachAnthonyFB",
+    "recruiting_area": "",
+    "regions": [],
+    "email": "danthony@richmond.edu",
+    "position_group": "Special Teams"
+  },
+  {
+    "conference": "Patriot League",
+    "school": "Richmond",
+    "coach_name": "Jacob Huesman",
+    "title": "Co-Offensive Coordinator/Quarterbacks",
+    "x_handle": "@thejhuesman14",
+    "x_url": "https://x.com/thejhuesman14",
+    "recruiting_area": "",
+    "regions": [],
+    "email": "jacob.huesman@richmond.edu",
+    "position_group": "Offensive Coordinator"
+  },
+  {
+    "conference": "Patriot League",
+    "school": "Richmond",
+    "coach_name": "Jameson Zacharias",
+    "title": "Cornerbacks/Defensive Recruiting Coordinator",
+    "x_handle": "@CoachZach_",
+    "x_url": "https://x.com/CoachZach_",
+    "recruiting_area": "",
+    "regions": [],
+    "email": "jameson.zacharias@richmond.edu",
+    "position_group": "Running Backs"
+  },
+  {
+    "conference": "Patriot League",
+    "school": "Richmond",
+    "coach_name": "Jerry Taylor",
+    "title": "Wide Receivers Coach",
+    "x_handle": "@coachjtaylorjr",
+    "x_url": "https://x.com/coachjtaylorjr",
+    "recruiting_area": "",
+    "regions": [],
+    "email": "jerry.taylor@richmond.edu",
+    "position_group": "Wide Receivers"
+  },
+  {
+    "conference": "Patriot League",
+    "school": "Richmond",
+    "coach_name": "Justin Wood",
+    "title": "Assistant Head Coach/Defensive Coordinator/Linebackers",
+    "x_handle": "@CoachWoodLB",
+    "x_url": "https://x.com/CoachWoodLB",
+    "recruiting_area": "",
+    "regions": [],
+    "email": "jwood3@richmond.edu",
+    "position_group": "Head Coach"
+  },
+  {
+    "conference": "Patriot League",
+    "school": "Richmond",
+    "coach_name": "Kyle Edwards",
+    "title": "Tight Ends Coach",
+    "x_handle": "@Mr_Kyle_Edwards",
+    "x_url": "https://x.com/Mr_Kyle_Edwards",
+    "recruiting_area": "DMV (DC, Maryland, Virginia)",
+    "regions": [
+      "Southeast"
+    ],
+    "email": "kyle.edwards@richmond.edu",
+    "position_group": "Tight Ends"
+  },
+  {
+    "conference": "Patriot League",
+    "school": "Richmond",
+    "coach_name": "Mike Cummings",
+    "title": "Co-Offensive Coordinator/Offensive Line Coach",
+    "x_handle": "@CoachM_Cummings",
+    "x_url": "https://x.com/CoachM_Cummings",
+    "recruiting_area": "",
+    "regions": [],
+    "email": "mike.cummings@richmond.edu",
+    "position_group": "Offensive Coordinator"
+  },
+  {
+    "conference": "Patriot League",
+    "school": "Richmond",
+    "coach_name": "Rachid Ibrahim",
+    "title": "Running Backs Coach",
+    "x_handle": "@ribrahim29",
+    "x_url": "https://x.com/ribrahim29",
+    "recruiting_area": "",
+    "regions": [],
+    "email": "rachid.ibrahim@richmond.edu",
+    "position_group": "Running Backs"
+  },
+  {
+    "conference": "Patriot League",
+    "school": "Richmond",
+    "coach_name": "Rob Noel",
+    "title": "Defensive Line/Run Game Coordinator",
+    "x_handle": "@coachnoel67",
+    "x_url": "https://x.com/coachnoel67",
+    "recruiting_area": "",
+    "regions": [],
+    "email": "rob.noel@richmond.edu",
+    "position_group": "Defensive Line"
+  },
+  {
+    "conference": "Patriot League",
+    "school": "Villanova",
+    "coach_name": "Mark Ferrante",
+    "title": "Thomas and Diane Treacy Endowed Football Head Coach",
+    "x_handle": "@coachferranteVU",
+    "x_url": "https://x.com/coachferranteVU",
+    "recruiting_area": "",
+    "regions": [],
+    "email": "mark.ferrante@villanova.edu",
+    "position_group": "Head Coach"
+  },
+  {
+    "conference": "Patriot League",
+    "school": "Villanova",
+    "coach_name": "Chris Boden",
+    "title": "Offensive Coordinator/Quarterbacks Coach",
+    "x_handle": "@CoachChrisBoden",
+    "x_url": "https://x.com/CoachChrisBoden",
+    "recruiting_area": "Florida; Northern New Jersey (Bergen, Essex, Hudson, Hunterdon, Morris, Passaic, Somerset, Sussex, Union, and Warren Counties); Local PA schools (Abington, Archbishop Wood, Bensalem, Bishop McDevitt, Bristol, Cheltenham, Conwell-Egan, Council Rock North, Council Rock South, Harry S. Truman, Jenkintown, Lower Moreland, Morrisville, Neshaminy, Pennsbury, Upper Moreland, and William Tennent)",
+    "regions": [
+      "Northeast",
+      "Southeast"
+    ],
+    "email": "christopher.boden@villanova.edu",
+    "position_group": "Offensive Coordinator"
+  },
+  {
+    "conference": "Patriot League",
+    "school": "Villanova",
+    "coach_name": "David Riede",
+    "title": "Assistant Coach (Recruiting Coordinator/Safeties)",
+    "x_handle": "@CoachRiede",
+    "x_url": "https://x.com/CoachRiede",
+    "recruiting_area": "Maryland, Delaware, Connecticut, Massachusetts, New Jersey, and Pennsylvania",
+    "regions": [
+      "Northeast",
+      "Southeast"
+    ],
+    "email": "david.riede@villanova.edu",
+    "position_group": "Defensive Backs"
+  },
+  {
+    "conference": "Patriot League",
+    "school": "Villanova",
+    "coach_name": "Dustin Johnson",
+    "title": "Assistant Coach (Cornerbacks)",
+    "x_handle": "@CoachD_Johnson",
+    "x_url": "https://x.com/CoachD_Johnson",
+    "recruiting_area": "",
+    "regions": [],
+    "email": "dustin.johnson@villanova.edu",
+    "position_group": "Running Backs"
+  },
+  {
+    "conference": "Patriot League",
+    "school": "Villanova",
+    "coach_name": "Forrest Rhyne",
+    "title": "Linebackers Coach",
+    "x_handle": "@CoachRhyne",
+    "x_url": "https://x.com/CoachRhyne",
+    "recruiting_area": "",
+    "regions": [],
+    "email": "forrest.rhyne@villanova.edu",
+    "position_group": "Linebackers"
+  },
+  {
+    "conference": "Patriot League",
+    "school": "Villanova",
+    "coach_name": "Josh Fletcher",
+    "title": "Running Backs / Special Teams Coordinator",
+    "x_handle": "@Coach_JFletcher",
+    "x_url": "https://x.com/Coach_JFletcher",
+    "recruiting_area": "New York (Sections 1, 2, 7, 9, and 10)",
+    "regions": [
+      "Northeast"
+    ],
+    "email": "joshua.fletcher@villanova.edu",
+    "position_group": "Special Teams"
+  },
+  {
+    "conference": "Patriot League",
+    "school": "Villanova",
+    "coach_name": "Nate Pagan",
+    "title": "Wide Receivers Coach",
+    "x_handle": "@CoachPagan",
+    "x_url": "https://x.com/CoachPagan",
+    "recruiting_area": "Philadelphia county (part), Atlanta (Cobb, Fayette, Fulton counties), Alaska, Idaho, Oregon, and Washington",
+    "regions": [
+      "Northeast",
+      "Southeast",
+      "West"
+    ],
+    "email": "nathan.pagan@villanova.edu",
+    "position_group": "Wide Receivers"
+  },
+  {
+    "conference": "Patriot League",
+    "school": "Villanova",
+    "coach_name": "Ross Pennypacker",
+    "title": "Defensive Coordinator/Defensive Line",
+    "x_handle": "@PennypackerRoss",
+    "x_url": "https://x.com/PennypackerRoss",
+    "recruiting_area": "Pennsylvania districts 2, 4 and 11; New York (Sections 3, 4, 5, 6); North Carolina, South Carolina and Tennessee.",
+    "regions": [
+      "Northeast",
+      "Southeast"
+    ],
+    "email": "ross.pennypacker@villanova.edu",
+    "position_group": "Defensive Coordinator"
+  },
+  {
+    "conference": "Patriot League",
+    "school": "Villanova",
+    "coach_name": "Sean Devine",
+    "title": "Assistant Coach (Offensive Run Game Coordinator/Offensive Line)",
+    "x_handle": "@devine_sean",
+    "x_url": "https://x.com/devine_sean",
+    "recruiting_area": "Greater Philadelphia area, South and Central New Jersey, Colorado, Kansas, New Mexico, Oklahoma, and Texas",
+    "regions": [
+      "Midwest",
+      "Northeast",
+      "Southwest",
+      "West"
+    ],
+    "email": "sean.b.devine@villanova.edu",
+    "position_group": "Offensive Line"
+  },
+  {
+    "conference": "Patriot League",
+    "school": "William & Mary",
+    "coach_name": "Mike London",
+    "title": "Head Football Coach",
+    "x_handle": "@CoachMikeLondon",
+    "x_url": "https://x.com/CoachMikeLondon",
+    "recruiting_area": "",
+    "regions": [],
+    "email": "N/A",
+    "position_group": "Head Coach"
+  },
+  {
+    "conference": "Patriot League",
+    "school": "William & Mary",
+    "coach_name": "Bo Revell",
+    "title": "Co-Defensive Coordinator / Inside Linebackers Coach",
+    "x_handle": "@BoRevell",
+    "x_url": "https://x.com/BoRevell",
+    "recruiting_area": "Virginia: Stafford, Northern Neck; Other: Eastern North Carolina, South Carolina, South Georgia",
+    "regions": [
+      "Southeast"
+    ],
+    "email": "wrrevell@wm.edu",
+    "position_group": "Defensive Coordinator"
+  },
+  {
+    "conference": "Patriot League",
+    "school": "William & Mary",
+    "coach_name": "Bryan Randall",
+    "title": "Quarterbacks Coach",
+    "x_handle": "@CoachB_Randall",
+    "x_url": "https://x.com/CoachB_Randall",
+    "recruiting_area": "In-state (Virginia) student-athletes and quarterbacks",
+    "regions": [
+      "Southeast"
+    ],
+    "email": "brandall@wm.edu",
+    "position_group": "Quarterbacks"
+  },
+  {
+    "conference": "Patriot League",
+    "school": "William & Mary",
+    "coach_name": "Darryl Blackstock",
+    "title": "Special Teams Coordinator / Outside Linebackers Coach",
+    "x_handle": "@CoachBlackstock",
+    "x_url": "https://x.com/CoachBlackstock",
+    "recruiting_area": "Virginia: Richmond, Chesterfield, Newport News; Other: Southern New Jersey, Frederick, Md., Missouri, Iowa, Tennessee",
+    "regions": [
+      "Midwest",
+      "Northeast",
+      "Southeast"
+    ],
+    "email": "dblackstock@wm.edu",
+    "position_group": "Special Teams"
+  },
+  {
+    "conference": "Patriot League",
+    "school": "William & Mary",
+    "coach_name": "Jack Armstrong",
+    "title": "Offensive Line Coach, Run Game Coordinator",
+    "x_handle": "@Coach_Armstrong",
+    "x_url": "https://x.com/Coach_Armstrong",
+    "recruiting_area": "Southwest Virginia; Western Pennsylvania, Eastern Ohio, West Virginia, Kentucky, Western New York",
+    "regions": [
+      "Midwest",
+      "Northeast",
+      "Southeast"
+    ],
+    "email": "jjarmstrong@wm.edu",
+    "position_group": "Offensive Line"
+  },
+  {
+    "conference": "Patriot League",
+    "school": "William & Mary",
+    "coach_name": "Keenan Carter",
+    "title": "Defensive Line Coach / Recruiting Coordinator",
+    "x_handle": "@DLRunStoppers",
+    "x_url": "https://x.com/DLRunStoppers",
+    "recruiting_area": "NOVA, James City County (VA); Washington, D.C., Michigan, Wisconsin, Arkansas, Canada, Colorado",
+    "regions": [
+      "International",
+      "Midwest",
+      "Southeast",
+      "West"
+    ],
+    "email": "ktcarter01@wm.edu",
+    "position_group": "Defensive Line"
+  },
+  {
+    "conference": "Patriot League",
+    "school": "William & Mary",
+    "coach_name": "Mike Maloney",
+    "title": "Tight Ends Coach",
+    "x_handle": "@CoachMMaloney",
+    "x_url": "https://x.com/CoachMMaloney",
+    "recruiting_area": "",
+    "regions": [],
+    "email": "mjmaloney@wm.edu",
+    "position_group": "Tight Ends"
+  },
+  {
+    "conference": "Patriot League",
+    "school": "William & Mary",
+    "coach_name": "Perry Jones",
+    "title": "Running Backs Coach / Video Coordinator",
+    "x_handle": "@CoachPerryJones",
+    "x_url": "https://x.com/CoachPerryJones",
+    "recruiting_area": "Hanover, Henricko, York County (VA); Eastern Pennslyvania, Delaware, Alabama, Mississippi, Kansas",
+    "regions": [
+      "Midwest",
+      "Northeast",
+      "Southeast"
+    ],
+    "email": "pjones@wm.edu",
+    "position_group": "Running Backs"
+  },
+  {
+    "conference": "Patriot League",
+    "school": "William & Mary",
+    "coach_name": "Ras-I Dowling",
+    "title": "Co-Defensive Coordinator / Secondary Coach",
+    "x_handle": "@CoachDowl",
+    "x_url": "https://x.com/CoachDowl",
+    "recruiting_area": "Southeast Virginia, Lynchburg (Virginia); Prince Georges County, Md., Washington, Oregon, Nevada (Other)",
+    "regions": [
+      "Southeast",
+      "West"
+    ],
+    "email": "rldowling@wm.edu",
+    "position_group": "Defensive Coordinator"
+  },
+  {
+    "conference": "Patriot League",
+    "school": "William & Mary",
+    "coach_name": "Winston October",
+    "title": "Offensive Coordinator / Wide Receivers Coach",
+    "x_handle": "@CoachOctober",
+    "x_url": "https://x.com/CoachOctober",
+    "recruiting_area": "",
+    "regions": [],
+    "email": "woctober@wm.edu",
+    "position_group": "Offensive Coordinator"
+  }
+]

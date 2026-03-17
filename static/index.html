@@ -87,6 +87,10 @@
             </div>
           </div>
         </div>
+        <div class="view-tabs" id="viewTabs" style="display:none;">
+          <button class="view-tab active" data-view="camps">Camps</button>
+          <button class="view-tab" data-view="coaches">Coaches</button>
+        </div>
         <div class="kpi-strip" id="kpiStrip"></div>
         <div class="header-actions">
           <button class="theme-toggle" data-theme-toggle aria-label="Toggle theme">
@@ -139,7 +143,7 @@
         </div>
       </aside>
 
-      <div class="map-container">
+      <div class="map-container" id="mapContainer">
         <div id="map"></div>
         <div class="map-legend">
           <div class="legend-item"><span class="legend-dot ivy"></span>Ivy</div>
@@ -168,6 +172,60 @@
             <span class="paywall-guarantee"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="12" height="12"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>Money-back guarantee</span>
             <button class="btn-text" onclick="showModal('login')" style="margin-top:var(--space-2);">Already have an account? Log in</button>
           </div>
+        </div>
+      </div>
+
+      <!-- Coaches Directory View (hidden by default) -->
+      <div class="coaches-view" id="coachesView" style="display:none;">
+        <div class="coaches-filters">
+          <div class="coaches-filter-row">
+            <div class="filter-group">
+              <label class="filter-label">Conference</label>
+              <select id="coachFilterConference" class="filter-select">
+                <option value="">All Conferences</option>
+                <option value="Ivy League">Ivy League</option>
+                <option value="Patriot League">Patriot League</option>
+              </select>
+            </div>
+            <div class="filter-group">
+              <label class="filter-label">School</label>
+              <select id="coachFilterSchool" class="filter-select">
+                <option value="">All Schools</option>
+              </select>
+            </div>
+            <div class="filter-group">
+              <label class="filter-label">Position Group</label>
+              <select id="coachFilterPosition" class="filter-select">
+                <option value="">All Positions</option>
+              </select>
+            </div>
+            <div class="filter-group">
+              <label class="filter-label">Recruiting Region</label>
+              <select id="coachFilterRegion" class="filter-select">
+                <option value="">All Regions</option>
+              </select>
+            </div>
+            <div class="filter-group filter-search">
+              <label class="filter-label">Search</label>
+              <input type="text" id="coachSearchInput" class="filter-select" placeholder="Search coaches...">
+            </div>
+          </div>
+          <div class="coaches-stats" id="coachesStats"></div>
+        </div>
+        <div class="coaches-table-wrap">
+          <table class="coaches-table">
+            <thead>
+              <tr>
+                <th class="sortable" data-sort="name">Coach <span class="sort-arrow"></span></th>
+                <th class="sortable" data-sort="school">School <span class="sort-arrow"></span></th>
+                <th class="sortable" data-sort="position_group">Position <span class="sort-arrow"></span></th>
+                <th class="sortable" data-sort="recruiting_area">Recruiting Area <span class="sort-arrow"></span></th>
+                <th>X Profile</th>
+                <th>Email</th>
+              </tr>
+            </thead>
+            <tbody id="coachesTableBody"></tbody>
+          </table>
         </div>
       </div>
     </div>
@@ -296,6 +354,7 @@
 </div>
 
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script src="./coaches_data.js"></script>
 <script src="./app.js"></script>
 </body>
 </html>
